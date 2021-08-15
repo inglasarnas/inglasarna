@@ -41,7 +41,7 @@ const How = () => {
           oss gärna!
         </Typography>
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs={12} className={classes.marginContainer}>
         <WhyGlass />
       </Grid>
       <Grid item xs={10} className={classes.marginContainer}>

@@ -30,6 +30,12 @@ box1: {
 },
 box2: {
     textAlign: 'center',
+    maxWidth: '100%',
+},
+[theme.breakpoints.between("xs", "sm")]: {
+    infoContainer: {
+        flexFlow: "column",
+    }
 }
 }))
 
@@ -37,8 +43,8 @@ const WhyGlass = () => {
     const classes = useStyles();
     return(
         <Grid container className={classes.infoContainer}>
-        <Grid item xs={5} className={[classes.box, classes.box1]}>
-            <Typography variant="h4" color="primary">
+        <Grid item xs={12} m={5} className={[classes.box, classes.box1]}>
+            <Typography variant="h4" color="primary" className={classes.box2}>
                 En inglasning ger ett starkare skydd mot väder, vind och buller.
             </Typography>
             <Typography variant="body1" color="primary">
@@ -50,8 +56,8 @@ const WhyGlass = () => {
                 </ul>
             </Typography>
         </Grid>
-        <Grid item xs={5} className={[classes.box, classes.box1]}>
-            <Typography variant="h4" color="primary">
+        <Grid item xs={12} m={5} className={[classes.box, classes.box1]}>
+            <Typography variant="h4" color="primary" className={classes.box2}>
                 En inglasning höjer värdet, sparar energi och kostnader.
             </Typography>
             <Typography variant="body1" color="primary">
@@ -62,8 +68,8 @@ const WhyGlass = () => {
                 </ul>
             </Typography>
         </Grid>
-        <Grid item xs={5} className={[classes.box, classes.box1]}>
-            <Typography variant="h4" color="primary">
+        <Grid item xs={12} m={5} className={[classes.box, classes.box1]}>
+            <Typography variant="h4" color="primary" className={classes.box2}>
                 En inglasning ger ett extra utrymme i ditt hem
             </Typography>
             <Typography variant="body1" color="primary">
@@ -75,8 +81,8 @@ const WhyGlass = () => {
                 </ul>
             </Typography>
         </Grid>
-        <Grid item xs={5} className={[classes.box, classes.box1]}>
-            <Typography variant="h4" color="primary">
+        <Grid item xs={12} m={5} className={[classes.box, classes.box1]}>
+            <Typography variant="h4" color="primary" className={classes.box2}>
                 En inglasning ökar både trygghet och säkerhet
             </Typography>
             <Typography variant="body1" color="primary">
