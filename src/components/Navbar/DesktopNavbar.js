@@ -96,20 +96,17 @@ const DesktopNavbar = (props) => {
       </Grid>
       <Grid item md={10}>
         <List component="nav" className={classes.linkContainer}>
-          <ListItem
-            button
-
-            aria-controls="infoMenu"
-            aria-haspopup="true"
-            onClick={handleProductsClick}
-          >
+          <ListItem button onClick={() => props.history.push("/info")} >
             <Typography color="primary" variant="h4" className={classes.text}>
-              Information <AiFillCaretDown className={classes.caret} />
+              Varför inglasning? 
             </Typography>
           </ListItem>
-          <ListItem button onClick={() => props.history.push("/products")}>
+          <ListItem button 
+            aria-controls="infoMenu"
+            aria-haspopup="true"
+            onClick={handleProductsClick}>
             <Typography color="primary" variant="h4" className={classes.text}>
-              Produkter
+              Produkter <AiFillCaretDown className={classes.caret} />
             </Typography>
           </ListItem>
           <ListItem button onClick={() => props.history.push("/prices")}>
@@ -149,11 +146,14 @@ const DesktopNavbar = (props) => {
         TransitionComponent={Fade}
         className={classes.dropdownMenu}
       >
-        <MenuItem onClick={() => handleProductsPush("/how")}>
-          Hur går det till?
+        <MenuItem onClick={() => handleProductsPush("/products")}>
+          Balkong
         </MenuItem>
-        <MenuItem onClick={() => handleProductsPush("/prices")}>
-          Vad kostar det?
+        <MenuItem onClick={() => handleProductsPush("/products")}>
+          Terass
+        </MenuItem>
+        <MenuItem onClick={() => handleProductsPush("/products")}>
+          Tillbehör
         </MenuItem>
       </Menu>
       {/* KONTAKT_MENY */}
