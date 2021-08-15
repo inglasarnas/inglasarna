@@ -27,9 +27,6 @@ function App(props) {
             <Route path="/" exact={true}>
               <Start />
             </Route>
-            <Route path="info">
-              <Info />
-            </Route>
             <Route path="/products">
               <Products />
             </Route>

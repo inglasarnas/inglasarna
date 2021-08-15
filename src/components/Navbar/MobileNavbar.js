@@ -11,7 +11,7 @@ import {
   IconButton,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import { FiX } from "react-icons/fi";
 import Logo from "../../assets/media/responsiveLogo.svg";
 
@@ -65,13 +65,12 @@ const MobileNavbar = (props) => {
             justify="space-between"
             alignItems="center"
           >
-            <Link to="/">
               <img
                 src={Logo}
                 alt="inglasarnas logotyp"
                 className={classes.logo}
+                onClick={props.history.push("/")}
               />
-            </Link>
             <MenuIcon
               onClick={() => setDrawer(true)}
               className={classes.menuIcon}

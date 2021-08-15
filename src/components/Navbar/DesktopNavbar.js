@@ -96,7 +96,7 @@ const DesktopNavbar = (props) => {
       </Grid>
       <Grid item md={10}>
         <List component="nav" className={classes.linkContainer}>
-          <ListItem button onClick={() => props.history.push("/info")} >
+          <ListItem button onClick={() => props.history.push("/how")} >
             <Typography color="primary" variant="h4" className={classes.text}>
               Varför inglasning? 
             </Typography>
