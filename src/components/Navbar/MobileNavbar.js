@@ -21,14 +21,28 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "white",
     height: "10vh",
     position: "fixed",
-
     zIndex: 1100,
     boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+  },
+  drawer: {
+    height: '90vh',
+  },
+  list: {
+    height: 'inherit',
+    display: 'flex',
+    flexFlow: 'column',
+  },
+  listItem: {
+    padding: '5vw 5vw',
   },
   nestedListContainer: {
     display: "flex",
     flexFlow: "column",
     alignItems: "start",
+    padding: 0,
+  },
+  nestedList : {
+    marginLeft: '4vw',
   },
   logo: {
     height: "7vh",
@@ -37,9 +51,7 @@ const useStyles = makeStyles((theme) => ({
   menuIcon: {
     fontSize: "5vh",
   },
-  btn: {
-    marginLeft: "7%",
-  },
+    
 }));
 const MobileNavbar = (props) => {
   const [drawer, setDrawer] = useState(false);
@@ -74,31 +86,64 @@ const MobileNavbar = (props) => {
           role="button"
           onClick={() => setDrawer(false)}
           onKeyDown={() => setDrawer(false)}
+          className={classes.drawer}
         >
           <IconButton>
             <FiX />
           </IconButton>
-          <List>
-            <ListItem button divider onClick={() => props.history.push("/how")}>
-              <Typography variant="h4" color="primary">
+          <List className={classes.list}>
+            <ListItem button divider onClick={() => props.history.push("/how")} className={classes.listItem}>
+              <Typography variant="h3" color="primary">
                 Hur går det till?
               </Typography>
             </ListItem>
+            <ListItem divider className={classes.nestedListContainer}>
             <ListItem
               button
               divider
               onClick={() => props.history.push("/products")}
+              className={classes.listItem}
             >
-              <Typography variant="h4" color="primary">
+              <Typography variant="h3" color="primary">
                 Produkter
               </Typography>
-            </ListItem>
+            </ListItem >
+            <List className={classes.nestedList}>
+            <ListItem
+              button
+              onClick={() => props.history.push("/products")}
+            >
+              <Typography variant="h4" color="primary">
+                Balkong
+              </Typography>
+              </ListItem>
+
+            <ListItem
+              button
+              onClick={() => props.history.push("/products")}
+            >
+              <Typography variant="h4" color="primary">
+                Terass
+              </Typography>
+              </ListItem>
+              <ListItem
+              button
+              onClick={() => props.history.push("/products")}
+            >
+              <Typography variant="h4" color="primary">
+                Tillbehör
+              </Typography>
+              </ListItem>
+              
+              </List>
+              </ListItem>
             <ListItem
               button
               divider
               onClick={() => props.history.push("/prices")}
+              className={classes.listItem}
             >
-              <Typography variant="h4" color="primary">
+              <Typography variant="h3" color="primary">
                 Kostnad
               </Typography>
             </ListItem>
@@ -106,48 +151,64 @@ const MobileNavbar = (props) => {
               button
               divider
               onClick={() => props.history.push("/gallery")}
+              className={classes.listItem}
             >
-              <Typography variant="h4" color="primary">
+              <Typography variant="h3" color="primary">
                 Galleri
               </Typography>
             </ListItem>
-
+            <ListItem divider className={classes.nestedListContainer}>
             <ListItem
               button
               divider
               onClick={() => props.history.push("/contact")}
+              className={classes.listItem}
             >
-              <Typography variant="h4" color="primary">
-                Kontakta oss
+              <Typography variant="h3" color="primary">
+                Kontakta Oss
               </Typography>
-            </ListItem>
+            </ListItem >
+            <List className={classes.nestedList}>
             <ListItem
               button
-              divider
               onClick={() => props.history.push("/contact/brf")}
             >
               <Typography variant="h4" color="primary">
                 BRF
               </Typography>
-            </ListItem>
+              </ListItem>
+
+            <ListItem
+              button
+              onClick={() => props.history.push("/contact/privat")}
+            >
+              <Typography variant="h4" color="primary">
+                Privatperson
+              </Typography>
+              </ListItem>
+              </List>
+              </ListItem>
             <ListItem
               button
               divider
               onClick={() => props.history.push("/contact/om")}
+              className={classes.listItem}
             >
-              <Typography variant="h4" color="primary">
-                Om Oss
+              <Typography variant="h3" color="primary">
+              Om Oss
               </Typography>
-            </ListItem>
+              </ListItem>
+              <ListItem 
+              button
+              divider
+              onClick={() => props.history.push('/contact/privatperson')}
+              className={classes.listItem}
+              >
+                <Typography variant="h3" color="primary">
+                  Gratis Offert
+                </Typography>
+              </ListItem>
           </List>
-          <Button
-            color="primary"
-            variant="contained"
-            className={classes.btn}
-            onClick={() => props.history.push("/contact")}
-          >
-            Gratis offert
-          </Button>
         </div>
       </Drawer>
     </>
