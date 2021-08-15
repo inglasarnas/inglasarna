@@ -12,7 +12,6 @@ import Products from "./views/Products";
 import How from "./views/How";
 import Gallery from "./views/Gallery";
 import Contact from "./views/Contact";
-import Info from "./views/Info";
 
 
 function App(props) {
