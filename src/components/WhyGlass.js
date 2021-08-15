@@ -30,11 +30,16 @@ box1: {
 },
 box2: {
     textAlign: 'center',
-    maxWidth: '100%',
+    minWidth: '100%',
 },
 [theme.breakpoints.between("xs", "sm")]: {
     infoContainer: {
         flexFlow: "column",
+    }
+},
+[theme.breakpoints.between("sm", "xl")]: {
+    infoContainer: {
+        flexFlow: "row wrap",
     }
 }
 }))
