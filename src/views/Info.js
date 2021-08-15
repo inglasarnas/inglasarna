@@ -2,9 +2,9 @@ import React from 'react';
 import { makeStyles, Grid, Typography } from '@material-ui/core';
 import ProductBalcony from '../assets/media/ProductBalcony.jpg';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
 container: {
-    backgroundImage: url(`${ProductBalcony}`),
+    backgroundImage: `url(${ProductBalcony})`,
     backgroundSize: 'cover',
     display: 'flex',
     flexFlow: 'row wrap',

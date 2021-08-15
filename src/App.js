@@ -12,6 +12,7 @@ import Products from "./views/Products";
 import How from "./views/How";
 import Gallery from "./views/Gallery";
 import Contact from "./views/Contact";
+import Info from "./views/Info";
 
 
 function App(props) {
@@ -25,6 +26,9 @@ function App(props) {
           <Switch>
             <Route path="/" exact={true}>
               <Start />
+            </Route>
+            <Route path="info">
+              <Info />
             </Route>
             <Route path="/products">
               <Products />
