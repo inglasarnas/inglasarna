@@ -39,11 +39,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const encode = (data) => {
-  return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-}
+// const encode = (data) => {
+//   return Object.keys(data)
+//       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+//       .join("&");
+// }
 
 const ContactForm = () => {
   const classes = useStyles();
@@ -56,13 +56,13 @@ const ContactForm = () => {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", ...this.state })
-      })
-        .then(() => alert("Success!"))
-        .catch(error => alert(error));
+      // fetch("/", {
+      //   method: "POST",
+      //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      //   body: encode({ "form-name": "contact", ...this.state })
+      // })
+      //   .then(() => alert("Success!"))
+      //   .catch(error => alert(error));
       
     },
   });
@@ -70,7 +70,7 @@ const ContactForm = () => {
   return (
     <form
       netlify
-      data-netlify={true}
+      data-netlify="true"
       noValidate
       onSubmit={formik.handleSubmit}
       className={classes.container}
