@@ -56,7 +56,7 @@ const ContactForm = () => {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      formData = {
+      let formData = {
         name: values.name,
         email: values.email,
         phone: values.phone,
