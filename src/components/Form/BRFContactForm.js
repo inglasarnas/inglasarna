@@ -57,6 +57,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 const ContactForm = () => {
   const classes = useStyles();
   const formik = useFormik({
@@ -75,9 +81,19 @@ const ContactForm = () => {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      console.log(values);
+      sendToNetlify(values)
     },
   });
+
+  const sendToNetlify = (data) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "Private Contact", ...data }),
+    })
+      .then(() => console.log(data))
+      .catch((error) => alert(error));
+  };
 
   return (
     <form
