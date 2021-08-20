@@ -63,14 +63,11 @@ const ContactForm = () => {
       })
         .then(() => alert("Success!"))
         .catch(error => alert(error));
-      
     },
   });
 
   return (
     <form
-      netlify
-      data-netlify="true"
       noValidate
       onSubmit={formik.handleSubmit}
       className={classes.container}
