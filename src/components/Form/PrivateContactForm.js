@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, TextField, Button, makeStyles } from "@material-ui/core";
 import { useFormik } from "formik";
+import { SMTPClient } from 'emailjs';
 import * as yup from "yup";
 
 const validationSchema = yup.object({
@@ -50,12 +51,17 @@ const ContactForm = () => {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      console.log(values);
+   
+
+
+
+      
     },
   });
 
   return (
     <form
+      data-netlify={true}
       noValidate
       onSubmit={formik.handleSubmit}
       className={classes.container}
