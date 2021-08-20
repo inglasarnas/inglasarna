@@ -41,9 +41,9 @@ const useStyles = makeStyles((theme) => ({
 
 const encode = (data) => {
   return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-}
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
 
 const ContactForm = () => {
   const classes = useStyles();
@@ -59,10 +59,10 @@ const ContactForm = () => {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "Private Contact", values })
+        body: encode({ "form-name": "Private-Contact", values }),
       })
-        .then(() => alert("Success!"))
-        .catch(error => alert(error));
+        .then(() => alert(console.log(values)))
+        .catch((error) => alert(error));
     },
   });
 
