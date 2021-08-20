@@ -72,7 +72,6 @@ const ContactForm = () => {
       onSubmit={formik.handleSubmit}
       className={classes.container}
     >
-    <input type="hidden" name="form-name" value="Private Contact" />
       <Grid
         item
         xs={12}
