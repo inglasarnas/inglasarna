@@ -56,23 +56,20 @@ const ContactForm = () => {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      let formData = {
-        name: values.name,
-        email: values.email,
-        phone: values.phone,
-        message: values.message,
-      };
-
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "privat", formData }),
-      })
-        .then(() => console.log(formData))
-        .catch((error) => alert(error));
+      sendToNetlify(values);
     },
   });
-
+  
+  const sendToNetlify = (data) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "privat", ...data }),
+    })
+      .then(() => console.log(data))
+      .catch((error) => alert(error));
+  };
+  
   return (
     <form
       noValidate
