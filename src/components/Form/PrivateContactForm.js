@@ -59,9 +59,9 @@ const ContactForm = () => {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "Private-Contact", values }),
+        body: encode({ "form-name": "privat", values }),
       })
-        .then(() => alert(console.log(values)))
+        .then(() => (console.log(values)))
         .catch((error) => alert(error));
     },
   });
