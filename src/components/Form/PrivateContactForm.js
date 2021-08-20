@@ -50,7 +50,14 @@ const ContactForm = () => {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-   
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", ...this.state })
+      })
+        .then(() => alert("Success!"))
+        .catch(error => alert(error));
+      
     },
   });
 
@@ -62,6 +69,7 @@ const ContactForm = () => {
       onSubmit={formik.handleSubmit}
       className={classes.container}
     >
+    <input type="hidden" name="form-name" value="Private Contact" />
       <Grid
         item
         xs={12}

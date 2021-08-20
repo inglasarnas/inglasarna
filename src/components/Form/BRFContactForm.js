@@ -81,8 +81,6 @@ const ContactForm = () => {
 
   return (
     <form
-      netlify
-      data-netlify={true}
       noValidate
       onSubmit={formik.handleSubmit}
       className={classes.container}
