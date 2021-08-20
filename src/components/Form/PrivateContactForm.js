@@ -56,12 +56,19 @@ const ContactForm = () => {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
+      formData = {
+        name: values.name,
+        email: values.email,
+        phone: values.phone,
+        message: values.message,
+      };
+
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "privat", values }),
+        body: encode({ "form-name": "privat", formData }),
       })
-        .then(() => (console.log(values)))
+        .then(() => console.log(formData))
         .catch((error) => alert(error));
     },
   });
