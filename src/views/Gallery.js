@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "5vh",
   },
   marginContainer: {
-    marginBottom: "5vh",
+    marginBottom: "5vw",
   },
   textContainer: {
     marginBottom: "5vh",
@@ -24,7 +24,7 @@ const Gallery = () => {
   const classes = useStyles();
   return (
     <Grid container className={classes.container}>
-      <Grid item xs={12} className={classes.textContainer}>
+      <Grid item xs={12} className={[classes.textContainer, classes.marginContainer]}>
         <Typography variant="h1" className={classes.title}>
           Galleri
         </Typography>
@@ -33,13 +33,13 @@ const Gallery = () => {
         </Typography>
       </Grid>
       <Grid item xs={12} className={classes.marginContainer}>
-        <GridGallery images={carouselImages} title="Rubrik1" />
+        <GridGallery images={carouselImages} title="Balkonger" />
       </Grid>
       <Grid item xs={12} className={classes.marginContainer}>
-        <GridGallery images={carouselImages} title="Rubrik2" />
+        <GridGallery images={carouselImages} title="Terasser" />
       </Grid>
       <Grid item xs={12} className={classes.marginContainer}>
-        <GridGallery images={carouselImages} title="Rubrik3" />
+        <GridGallery images={carouselImages} title="Tillbehör" />
       </Grid>
     </Grid>
   );

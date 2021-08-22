@@ -23,6 +23,9 @@ const useStyles = makeStyles((theme) => ({
   marginBottom1: {
     marginBottom: "1vh",
   },
+  marginContainer: {
+    marginBottom: '5vw',
+  },
   title: {
     marginBottom: "1vh",
   },

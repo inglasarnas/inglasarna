@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
   marginContainer: {
-    marginBottom: "5vh",
+    marginBottom: "5vw",
   },
   textContainer: {
     marginBottom: "5vh",
@@ -32,7 +32,7 @@ const How = () => {
   return (
     <Grid container className={classes.container}>
 
-<Grid item xs={12} className={classes.textContainer}>
+<Grid item xs={12} className={[classes.textContainer, classes.marginContainer]}>
         <Typography variant="h1" className={classes.title}>
           Hur går det till?
         </Typography>

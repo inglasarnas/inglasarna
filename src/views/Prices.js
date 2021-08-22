@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "1vh",
   },
   marginContainer: {
-    marginBottom: "5vh",
+    marginBottom: "5vw",
   },
   textContainer: {
     textAlign: "center",
@@ -29,7 +29,7 @@ const Prices = (props) => {
   const classes = useStyles();
   return (
     <Grid container className={classes.container}>
-      <Grid item xs={12} className={classes.textContainer}>
+      <Grid item xs={12} className={[classes.textContainer, classes.marginContainer]}>
         <Typography variant="h1">Priser</Typography>
         <Typography variant="body1">
           Om ni har fler frågor angående priser eller vill ha en offert,

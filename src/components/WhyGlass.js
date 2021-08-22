@@ -30,14 +30,14 @@ box1: {
 },
 box2: {
     textAlign: 'center',
-    minWidth: '100%',
+    maxWidth: '100%',
 },
-[theme.breakpoints.between("xs", "sm")]: {
+[theme.breakpoints.down("sm")]: {
     infoContainer: {
         flexFlow: "column",
     }
 },
-[theme.breakpoints.between("sm", "xl")]: {
+[theme.breakpoints.up("sm")]: {
     infoContainer: {
         flexFlow: "row wrap",
     }
@@ -48,7 +48,7 @@ const WhyGlass = () => {
     const classes = useStyles();
     return(
         <Grid container className={classes.infoContainer}>
-        <Grid item xs={12} m={5} className={[classes.box, classes.box1]}>
+        <Grid item xs={12} sm={12} m={5} lg={5} xl={5}  className={[classes.box, classes.box1]}>
             <Typography variant="h4" color="primary" className={classes.box2}>
                 En inglasning ger ett starkare skydd mot väder, vind och buller.
             </Typography>
@@ -61,7 +61,7 @@ const WhyGlass = () => {
                 </ul>
             </Typography>
         </Grid>
-        <Grid item xs={12} m={5} className={[classes.box, classes.box1]}>
+        <Grid item xs={12} sm={12} m={5} lg={5} xl={5}  className={[classes.box, classes.box1]}>
             <Typography variant="h4" color="primary" className={classes.box2}>
                 En inglasning höjer värdet, sparar energi och kostnader.
             </Typography>
@@ -73,7 +73,7 @@ const WhyGlass = () => {
                 </ul>
             </Typography>
         </Grid>
-        <Grid item xs={12} m={5} className={[classes.box, classes.box1]}>
+        <Grid item xs={12} sm={12} m={5} lg={5} xl={5} className={[classes.box, classes.box1]}>
             <Typography variant="h4" color="primary" className={classes.box2}>
                 En inglasning ger ett extra utrymme i ditt hem
             </Typography>
@@ -86,7 +86,7 @@ const WhyGlass = () => {
                 </ul>
             </Typography>
         </Grid>
-        <Grid item xs={12} m={5} className={[classes.box, classes.box1]}>
+        <Grid item xs={12} sm={12} m={5} lg={5} xl={5} className={[classes.box, classes.box1]}>
             <Typography variant="h4" color="primary" className={classes.box2}>
                 En inglasning ökar både trygghet och säkerhet
             </Typography>
@@ -98,7 +98,7 @@ const WhyGlass = () => {
                 </ul>
             </Typography>
         </Grid>
-        <Grid item xs={10} className={[classes.box, classes.box2]}>
+        <Grid item xs={10} className={[classes.box, classes.box1, classes.box2]}>
             <Typography variant="body1" color="primary">
     Det finns ett stort antal fördelar med att glasa in din balkong eller terass. 
     Våra inglasningar från Lumon höjer boendekomforten och ger extra utrymme till ditt hem.

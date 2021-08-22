@@ -12,25 +12,28 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
   },
+  margin: {
+    marginBottom: '5vw',
+  }
 }));
 
 const Start = () => {
   const classes = useStyles();
   return (
     <Grid container className={classes.container}>
-      <Grid item xs={12}>
+      <Grid item xs={12} className={classes.margin}>
         <SloganCarousel />
       </Grid>
-      <Grid item xs={11}>
+      <Grid item xs={11} className={classes.margin}>
         <InfoIconCards />
       </Grid>
-      <Grid item xs={11}>
+      <Grid item xs={11} className={classes.margin}>
         <ThreeColInfoBox />
       </Grid>
-      <Grid item xs={11}>
+      <Grid item xs={11} className={classes.margin}>
         <ContactForm />
       </Grid>
-      <Grid item xs={11}>
+      <Grid item xs={11} className={classes.margin}>
         <RetailerInfoBox />
       </Grid>
     </Grid>
