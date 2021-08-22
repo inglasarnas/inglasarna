@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.c104b787.chunk.js",
-    "main.js.map": "/static/js/main.c104b787.chunk.js.map",
+    "main.js": "/static/js/main.fce81bec.chunk.js",
+    "main.js.map": "/static/js/main.fce81bec.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9f7ec765.js",
     "runtime-main.js.map": "/static/js/runtime-main.9f7ec765.js.map",
-    "static/js/2.64c804dd.chunk.js": "/static/js/2.64c804dd.chunk.js",
-    "static/js/2.64c804dd.chunk.js.map": "/static/js/2.64c804dd.chunk.js.map",
+    "static/js/2.e05ed417.chunk.js": "/static/js/2.e05ed417.chunk.js",
+    "static/js/2.e05ed417.chunk.js.map": "/static/js/2.e05ed417.chunk.js.map",
     "static/js/3.fcfe1977.chunk.js": "/static/js/3.fcfe1977.chunk.js",
     "static/js/3.fcfe1977.chunk.js.map": "/static/js/3.fcfe1977.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.64c804dd.chunk.js.LICENSE.txt": "/static/js/2.64c804dd.chunk.js.LICENSE.txt",
+    "static/js/2.e05ed417.chunk.js.LICENSE.txt": "/static/js/2.e05ed417.chunk.js.LICENSE.txt",
     "static/media/Carousel01.b6e8f32d.jpg": "/static/media/Carousel01.b6e8f32d.jpg",
     "static/media/Carousel02.7d67e386.jpg": "/static/media/Carousel02.7d67e386.jpg",
     "static/media/Carousel03.554febbd.jpg": "/static/media/Carousel03.554febbd.jpg",
@@ -23,7 +23,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9f7ec765.js",
-    "static/js/2.64c804dd.chunk.js",
-    "static/js/main.c104b787.chunk.js"
+    "static/js/2.e05ed417.chunk.js",
+    "static/js/main.fce81bec.chunk.js"
   ]
 }
