@@ -69,7 +69,7 @@ const SloganCarousel = () => {
                 alt="Inglasarnas Logotyp"
                 className={classes.logo}
               />
-              <Typography variant="h6" color="primary">
+              <Typography variant="h2" color="primary">
                 Vi kan inglasning!
               </Typography>
             </Grid>

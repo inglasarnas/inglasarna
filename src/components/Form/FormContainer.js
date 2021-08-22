@@ -66,7 +66,7 @@ const FormContainer = ({ from }) => {
   return (
     <>
       <Typography className={classes.title} variant="h2">
-        Kontakta oss som privat person eller BRF här
+        Kontakta oss som privatperson eller BRF här
       </Typography>
       <Grid container className={classes.container}>
         <Grid item xs={12}>
@@ -82,7 +82,7 @@ const FormContainer = ({ from }) => {
               }}
               color={!toggleView ? "primary" : ""}
             >
-              Privat Person
+              Privatperson
             </Button>
             <Button
               onClick={() => {
@@ -100,7 +100,7 @@ const FormContainer = ({ from }) => {
         <Grid container className={classes.textContainer}>
           <Grid item xs={12} md={6} lg={6} className={classes.center}>
             <Typography className={classes.brfTitle} variant="h2">
-              Balkong inglasning för brf
+              Balkong inglasning för BRF
             </Typography>
             <Typography variant="body1">
               Det finns många fördelar med att beställa balkonginglasning för er
@@ -119,20 +119,40 @@ const FormContainer = ({ from }) => {
                 Fördelar med en inglasad balkong
               </Typography>
               <ul className={classes.ul}>
-                <li className={classes.li}>Bostadens värde ökar</li>
-                <li className={classes.li}>Skyddar mot pollen, vind, regn</li>
-                <li className={classes.li}>Stänger ute oljud och buller</li>
                 <li className={classes.li}>
+                  <Typography variant="body1">
+                  Bostadens värde ökar
+                  </Typography>
+                  </li>
+                <li className={classes.li}>
+                  <Typography variant="body1">
+                  Skyddar mot pollen, vind, regn
+                  </Typography>
+                  </li>
+                <li className={classes.li}>
+                  <Typography variant="body1">
+                  Stänger ute oljud och buller
+                  </Typography>
+                  </li>
+                <li className={classes.li}>
+                  <Typography variant="body1">
                   Bidrar till att spara energi för dig och hela fastigheten
+                  </Typography>
                 </li>
                 <li className={classes.li}>
+                  <Typography variant="body1">
                   Du kan använda balkongen under en längre säsong
+                  </Typography>
                 </li>
                 <li className={classes.li}>
+                  <Typography variant="body1">
                   Du skapar ett extra rum för din bostad
+                  </Typography>
                 </li>
                 <li className={classes.li}>
+                  <Typography variant="body1">
                   Det blir mindre slit på bostadens fasad och din balkong
+                  </Typography>
                 </li>
               </ul>
             </div>

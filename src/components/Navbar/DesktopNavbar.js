@@ -9,13 +9,12 @@ import {
   List,
   ListItem,
 } from "@material-ui/core";
-import { withRouter } from "react-router";
+import { withRouter, Link } from "react-router-dom";
 import { AiFillCaretDown } from "react-icons/ai";
 import Logo from "../../assets/media/logotyp.svg";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-
     backgroundColor: "white",
     height: "10vh",
     display: "flex",
@@ -50,9 +49,11 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: 8,
   },
   dropdownMenu: {
-    padding: 8,
     marginTop: "5vh",
   },
+  dropdownLink: {
+    padding: '1vw'
+  }
 }));
 const DesktopNavbar = (props) => {
 
@@ -92,7 +93,9 @@ const DesktopNavbar = (props) => {
   return (
     <Grid container className={classes.container}>
       <Grid item md={2}>
+        <Link to="/">
         <img src={Logo} alt="inglasarnas logotyp" className={classes.logo} />
+        </Link>
       </Grid>
       <Grid item md={10}>
         <List component="nav" className={classes.linkContainer}>
@@ -146,13 +149,13 @@ const DesktopNavbar = (props) => {
         TransitionComponent={Fade}
         className={classes.dropdownMenu}
       >
-        <MenuItem onClick={() => handleProductsPush("/products")}>
+        <MenuItem onClick={() => handleProductsPush("/products")} className={classes.dropdownLink}>
           Balkong
         </MenuItem>
-        <MenuItem onClick={() => handleProductsPush("/products")}>
+        <MenuItem onClick={() => handleProductsPush("/products")} className={classes.dropdownLink}>
           Terass
         </MenuItem>
-        <MenuItem onClick={() => handleProductsPush("/products")}>
+        <MenuItem onClick={() => handleProductsPush("/products")} className={classes.dropdownLink}>
           Tillbehör
         </MenuItem>
       </Menu>
@@ -165,13 +168,13 @@ const DesktopNavbar = (props) => {
         TransitionComponent={Fade}
         className={classes.dropdownMenu}
       >
-        <MenuItem onClick={() => handleKontaktPush("/contact/privat")}>
+        <MenuItem onClick={() => handleKontaktPush("/contact/privat")} className={classes.dropdownLink}>
           Privat
         </MenuItem>
-        <MenuItem onClick={() => handleKontaktPush("/contact/brf")}>
+        <MenuItem onClick={() => handleKontaktPush("/contact/brf")} className={classes.dropdownLink}>
           BRF
         </MenuItem>
-        <MenuItem onClick={() => handleKontaktPush("/contact/om")}>
+        <MenuItem onClick={() => handleKontaktPush("/contact/om")} className={classes.dropdownLink}>
           Om Oss
         </MenuItem>
       </Menu>
