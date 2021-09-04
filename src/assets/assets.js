@@ -95,36 +95,39 @@ export const carouselImages = [
 
   export const infoIconCards = [
     {
-      rubrik: "Rubrik1",
+      rubrik: "Överlägsen design och funktion",
       text:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra sodales nulla elementum.",
+        "Vår design och funktionalitet kan kombineras på flertalet olika sätt. Vi erbjuder olika modeller och system för att komma fram till just er perfekta lösning.",
     },
     {
-      rubrik: "Rubrik2",
+      rubrik: "Effektiva och professionella",
       text:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra sodales nulla elementum.",
+        "Vi är effektiva och professionella i vårt arbete, vi har lång erfarenhet av att arbeta med ingladning. Vårat mål är att ni alltid ska känna er trygga med våra produkter och vår service.",
     },
     {
-      rubrik: "Rubrik3",
+      rubrik: "Kreativa lösningar",
       text:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra sodales nulla elementum.",
+        "Vi har lång erfarenhet av att arbeta med inglasningar, och vi hittar kreativa lösningar som är funktionella och lämpliga efter era önskemål.",
     },
   ];
 
   export const threeColInfoBoxes = [
     {
-      rubrik: "Rubrik1",
-      text:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra sodales nulla elementum.",
-    },
+      rubrik: "Vi planerar",
+      text1:
+        "Vid vårt första kostnadsfria besök hos er diskuterar vi olika lösningar, mäter och sedan tar vi fram en offert. Vårat mål är att hitta just er perfekta lösning. Vi kommer även gå igenom olika finansieringslösningar.",
+      text2: "När ni bestämt er så kommer vi att hålla i hela processen, vi kommer sköta alla nödvändiga avtal och ta fram ett bygglov åt er."
+      },
     {
-      rubrik: "Rubrik2",
-      text:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra sodales nulla elementum.",
-    },
+      rubrik: "Vi monterar",
+      text1:
+        "Vi kommer tillsammans att bestämma ett datum för montering. Vi kommer sedan att säkerställa att alla mått är exakta samt att den tänkta konstruktionen uppfyller era krav.",
+      text2: "En av våra specialister kommer sedan ut till er för att montera den nya inglasningen."
+      },
     {
-      rubrik: "Rubrik3",
-      text:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra sodales nulla elementum.",
-    },
+      rubrik: "Vi garanterar",
+      text1:
+        "Vi har garanti för både material och montering. Vi har 5 års garanti för produkterna och monteringen.",
+      text2: "Produkterna vi arbetar med är av termiskt härdat säkerhetsglas och är CE-märkta. Denna märkning ges endast till byggprodukter som uppfyller EU:s tuffa krav på miljövänlighet och säkerhet."
+      },
   ];

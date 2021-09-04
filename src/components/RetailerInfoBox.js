@@ -32,13 +32,13 @@ const RetailerInfoBox = () => {
       </Grid>
       <Grid item xs={8} className={classes.textContainer}>
         <Typography variant="body1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac justo
-          commodo, malesuada odio vitae, euismod ante. Mauris quis sem laoreet,
-          lacinia neque eget, venenatis ligula. Maecenas pharetra tincidunt
-          sapien vel mattis. Fusce in faucibus nunc. Integer et velit pulvinar,
-          ultrices odio interdum, mattis tellus. Duis nisl orci, porta vel nisi
-          sit amet, sollicitudin consequat est. Aenean fermentum id arcu in
-          suscipit.
+          Lumon är ett av de främsta företagen på den europeiska balkong- och terassmarknaden, och är specialiserade på konstruktioner i glas och aluminium samt hållbarhet.
+          De har ett brett sortiment med allt från balkongglas till glasterrasser, avgränsare och lösningar för olika balkong- och terassfasader.<br/>
+          Form, funktion och service håller alltid absolut högsta standard.
+        </Typography>
+        <Typography variant="body1">
+          <br/>
+          Lumons huvudkontor ligger i Kouvola, Finland och de har dotterbolag i Sverige, Norge, Spanien, Tyskland, Schweiz, Frankrike, Ryssland och Kanada.
         </Typography>
       </Grid>
       <Grid item xs={6} className={classes.lumonContainer} />

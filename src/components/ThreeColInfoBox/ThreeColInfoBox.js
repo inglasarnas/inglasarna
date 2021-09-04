@@ -36,7 +36,7 @@ columns: {
     flexFlow: "row nowrap",
     alignItems: "center",
     justifyContent: "space-between",
-    width: "100%",
+    width: "50vw",
     height: "100%",
     marginBottom: theme.spacing(4),
   },
@@ -51,13 +51,13 @@ const ThreeColInfoBox = () => {
         md={10}
         className={[classes.columns, classes.headingContainer]}
       >
-        <Typography variant="h2">RUBRIK</Typography>
+        <Typography variant="h2">Såhär går det till</Typography>
       </Grid>
       <Grid item md={10} className={classes.columnsContainer}>
         {threeColInfoBoxes.map((box) => {
           return (
-            <Grid item md={3} className={[classes.columns, classes.columnSize]} key={box.rubrik}>
-              <InfoColumn rubrik={box.rubrik} text={box.text} />
+            <Grid item md={4} className={[classes.columns, classes.columnSize]} key={box.rubrik}>
+              <InfoColumn rubrik={box.rubrik} text1={box.text1} text2={box.text2}/>
             </Grid>
           );
         })}

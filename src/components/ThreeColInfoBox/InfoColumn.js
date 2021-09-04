@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     flexFlow: "column wrap",
     alignItems: "center",
     textAlign: "center",
-    minHeight: 300,
+    minHeight: '15vw',
   },
 }));
 
@@ -15,12 +15,16 @@ const InfoColumn = (props) => {
   const classes = useStyles();
 
   return (
-    <Grid container spacing={5} className={classes.container}>
+    <Grid container spacing={7} className={classes.container}>
       <Grid item m={10}>
-        <Typography variant="h4">{props.rubrik}</Typography>
+        <Typography variant="h2">{props.rubrik}</Typography>
       </Grid>
       <Grid item m={10}>
-        <Typography variant="body1">{props.text}</Typography>
+        <Typography variant="body1">{props.text1}</Typography>
+
+      </Grid>
+      <Grid item m={10}>
+      <Typography variant="body2">{props.text2}</Typography>
       </Grid>
     </Grid>
   );

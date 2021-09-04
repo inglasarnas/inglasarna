@@ -1,7 +1,8 @@
 import React from "react";
 import { Typography, Grid, makeStyles } from "@material-ui/core";
 import {HiPhone, HiMail} from 'react-icons/hi';
-import LumonLogo from '../assets/media/lumonlogo.png';
+import LumonLogo from '../assets/media/LUMON_ORIGINAL_rgb.png';
+import {Link} from 'react-router-dom';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -50,6 +51,9 @@ const useStyles = makeStyles((theme) => ({
   lumonlogo: {
     width: '11vw',
   },
+  linkstyling: {
+    color: 'white',
+  },
   [theme.breakpoints.down("sm")]: {
   box2: {
     width: '50vw'
@@ -72,22 +76,28 @@ const Footer = () => {
   return (
     <Grid container className={classes.container}>
       <Grid item md={5} className={classes.box1}>
-        <Typography variant="body1" className={classes.marginBottom}>Kontakt</Typography>
+        <Typography variant="body1" className={classes.marginBottom}>INGLASARNA AB</Typography>
         <div>
         <Typography variant="subtitle1">
-          Adressrad 1
-        </Typography>
-        <Typography variant="subtitle1">
-          Adressrad 2
+          Idegatan 14
         </Typography>
         <Typography variant="subtitle1" className={classes.marginBottom}>
-          Adressrad 3
+          582 78 LINKÖPING
+        </Typography>
+        <Typography variant="subtitle1" className={classes.marginBottom}>
+          Vardagar 09:00-19:00
         </Typography>
         <Typography variant="subtitle1">
-<HiPhone/> 07000000000
+<HiPhone/> +4673 502 3645
         </Typography>
         <Typography variant="subtitle1">
-<HiMail/> email@email.com
+<HiPhone/> +4676 337 6264
+        </Typography>
+        <Typography variant="subtitle1" className={classes.marginBottom}>
+<HiMail/> info@inglasarna.se
+        </Typography>
+        <Typography variant="subtitle1">
+          Org nr: 559307-0906
         </Typography>
         </div>
       </Grid>
@@ -96,11 +106,28 @@ const Footer = () => {
 <img src={LumonLogo} alt="Lumon logotype" className={classes.lumonlogo} />
       </Grid>
       <Grid item md={4} className={classes.box3}>
-        <Typography variant="body1" className={classes.marginBottom}>Annan information</Typography>
-        <Typography variant="subtitle1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
-          sodales nulla elementum.
+        <Typography variant="body1" className={classes.marginBottom}>Länkar</Typography>
+        <Link to="/how" className={classes.linkstyling}>
+        <Typography variant="subtitle1" className={classes.marginBottom}>
+        Varför inglasning?
         </Typography>
+        </Link>
+        <Link to="/products" className={classes.linkstyling}>
+        <Typography variant="subtitle1" className={classes.marginBottom}>
+          Produkter
+        </Typography>
+        </Link>
+        <Link to="/prices" className={classes.linkstyling}>
+        <Typography variant="subtitle1" className={classes.marginBottom}>
+          Kostnad
+        </Typography>
+        </Link>
+        <Link to="/contact" className={classes.linkstyling}>
+        <Typography variant="subtitle1" className={classes.marginBottom}>
+          Kontakta oss
+        </Typography>
+        </Link>
+
       </Grid>
     </Grid>
   );

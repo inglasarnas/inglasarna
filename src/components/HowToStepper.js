@@ -19,16 +19,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const steps = ["Steg 1", "Steg 2", "Steg 3"];
+const steps = ["Planering", "Montering", "Garanti"];
 
 const getStepContent = (step) => {
   switch (step) {
     case 0:
-      return `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar non, viverra risus velit vulputate morbi pellentesque mattis. Iaculis porta pellentesque.`;
+      return `Under vårt första kostnadsfria besök hos er diskuterar vi olika lösningar, mäter och sedan tar vi fram en offert. Vårat mål är att hitta just er perfekta lösning. Vi kommer även gå igenom olika finansieringslösningar.`;
     case 1:
-      return "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar non, viverra risus velit vulputate morbi pellentesque mattis. Iaculis porta pellentesque.";
+      return "Vi bestämmer tillsammans ett datum för montering. Vi kommer att säkerställa att alla mått är exakta samt att den tänkta lösningen uppfyller era krav. En av våra specialister kommer sedan hem till er för att montera den nya inglasningen.";
     case 2:
-      return `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar non, viverra risus velit vulputate morbi pellentesque mattis. Iaculis porta pellentesque.`;
+      return `Vi har 5 års garanti för både våra produkter och själva monteringen. Produkterna vi arbetar med är CE-märkta säkerhetsglas.`;
     default:
       return "Unknown step";
   }
