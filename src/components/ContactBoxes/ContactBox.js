@@ -23,11 +23,11 @@ const useStyles = makeStyles((theme) => ({
   },
   imageContainer: {
     backgroundImage: (props) => `url(${props.image})`,
-    backgroundSize: "cover",
+    backgroundSize: "contain",
+    backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     height: 300,
     width: 300,
-    borderRadius: 150,
     "@media (max-width: 900px)": {
       height: 200,
       width: 200,
@@ -45,6 +45,9 @@ const useStyles = makeStyles((theme) => ({
     flexFlow: "column",
     justifyContent: "space-evenly",
   },
+  marginBottom: {
+    marginBottom: '1vw',
+  },
 }));
 const ContactBox = (props) => {
   const classes = useStyles(props);
@@ -54,10 +57,10 @@ const ContactBox = (props) => {
         <div className={classes.imageContainer} />
       </Grid>
       <Grid item xs={12} md={6} className={classes.textContainer}>
-        <Typography variant="h1">Kontaktperson</Typography>
-        <Typography variant="h3">{props.name}</Typography>
-        <Typography variant="body1">{props.number}</Typography>
-        <Typography variant="body1">{props.email}</Typography>
+        <Typography variant="h1" className={classes.marginBottom}>Kontaktuppgifter</Typography>
+        <Typography variant="h3" className={classes.marginBottom}>{props.name}</Typography>
+        <Typography variant="h3" className={classes.marginBottom}>{props.number}</Typography>
+        <Typography variant="h3" className={classes.marginBottom}>{props.email}</Typography>
       </Grid>
     </Grid>
   );

@@ -3,6 +3,7 @@ import ContactBox from "../components/ContactBoxes/ContactBox";
 import FormContainer from "../components/Form/FormContainer";
 import { Typography, makeStyles } from "@material-ui/core";
 import { useEffect, useRef } from "react";
+import logo from '../assets/media/logotyp.svg';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -16,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "5vh",
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
+    width: '40vw'
   },
   marginBottom5: {
     marginBottom: "5vh",
@@ -29,6 +31,9 @@ const useStyles = makeStyles((theme) => ({
   title: {
     marginBottom: "1vh",
   },
+  boldText: {
+    fontWeight: 600,
+  }
 }));
 const Contact = ({ from }) => {
   const classes = useStyles();
@@ -55,34 +60,39 @@ const Contact = ({ from }) => {
       </div>
       <div className={classes.marginBottom5} />
       <ContactBox
-        image="https://images.unsplash.com/photo-1591258739299-5b65d5cbb235?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-        name="Förnamn Efternamn"
-        number="070 000 00 00"
-        email="fornamn@minemail.com"
+        image={logo}
+        name="+4676 337 6264"
+        number="+4673 502 3645"
+        email="info@inglasarna.se"
       />
       <div className={classes.marginBottom5} />
       <FormContainer from={from} />
       <div className={classes.marginBottom5} />
       <div className={classes.textContainer} ref={omOss}>
         <Typography variant="h2" className={classes.title}>
-          Om oss
+          Vi är specialister på inglasning i Linköping och Norrköping
+        </Typography>
+        <Typography variant="body1" className={classes.marginBottom1}>
+        Grundarna av Inglasarna har över 13 års erfarenhet av Lumons inglasning, såväl för privatperson som bostadsrättsföreningar.
+        Vi arbetar lokalt i Linköping och Norrköping med omnejd. Det gör att vi känner till villkoren för inglasning väldigt bra för området och har nära till våra kunder, varesig det rör sig om en ny inglasning eller service av en befintlig sådan.
+        </Typography>
+        <Typography variant="h3" className={classes.marginBottom1}>
+          Vi är säkra på kvaliteten i vårat arbete och ger dig därför 5 års garanti på både installation och produkt.
+        </Typography>
+        <Typography variant="body1" className={classes.marginBottom1}>
+          För oss är det viktigt att ni får den produkt som ni önskat er.
+          Därför kommer vi ut till er för att se över vilka speciella villkor som gäller hos just er, tar mått och går igenom vilka möjligheter som passar er.
+          Därefter kan vi presentera ett förslag på lösning, kostnad och tid.
+          För representanter av bostadsrättsföreningar eller företag så kan vi ta fram ett förmånligt förslag för hela fastigheten.
+          Vi hjälper dig sedan att presentera förslaget för styrelsen och övriga medlemmar.
+        </Typography>
+        <Typography variant="h3" className={classes.marginBottom1}>
+          För att du ska få den bästa kvaliteten så sköter vi hela inglasningsprocessen själva.
         </Typography>
         <Typography variant="body1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
-          porttitor arcu mollis dignissim phasellus suspendisse risus bibendum
-          pulvinar. Justo, mauris ac ut dui. Suspendisse orci vivamus
-          suspendisse convallis imperdiet montes, in auctor orci. Tempus eu quam
-          consequat, ac tempor. Elit dictumst diam nibh at ut. Elit malesuada
-          placerat tempus egestas venenatis diam blandit. Gravida lobortis
-          convallis sodales proin interdum. Lectus facilisi in quam metus. Sed
-          massa eget tempus purus nunc sit purus. Nec sit pellentesque a lacus
-          fringilla. Volutpat pulvinar integer massa tortor purus malesuada
-          blandit nibh dignissim. Arcu orci, turpis vulputate nulla tristique ut
-          eget sed orci. Massa eget a ac magna ornare lacus enim. Risus egestas
-          risus, netus tellus scelerisque. Egestas ut facilisis arcu est
-          phasellus. Leo sit id in hendrerit risus, ullamcorper eget duis nulla.
-          Sit proin lorem eget dolor tincidunt. Elementum egestas eget mattis
-          auctor ac non.
+          Vi vill kunna garantera er att kvaliteten blir den bästa som ni kan hitta på marknaden. Så vi kommer att hjälpa er från planering till bygglov, från finansiering till leverans och montage.
+          Det är därför vi också vågar ge dig en garanti på 5 år, på både installation och material.
+          Är ni intresserad så kontakta oss, så gör vi ett kostnadsfritt besök hos er!
         </Typography>
       </div>
     </div>

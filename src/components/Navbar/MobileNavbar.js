@@ -176,6 +176,14 @@ const MobileNavbar = (props) => {
                 BRF
               </Typography>
               </ListItem>
+              <ListItem
+              button
+              onClick={() => props.history.push("/contact/brf")}
+            >
+              <Typography variant="h4" color="primary">
+                Företag
+              </Typography>
+              </ListItem>
 
             <ListItem
               button

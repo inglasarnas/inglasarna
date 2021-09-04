@@ -66,7 +66,7 @@ const FormContainer = ({ from }) => {
   return (
     <>
       <Typography className={classes.title} variant="h2">
-        Kontakta oss som privatperson eller BRF här
+        Kontakta oss som privatperson, BRF eller företag här
       </Typography>
       <Grid container className={classes.container}>
         <Grid item xs={12}>
@@ -90,7 +90,7 @@ const FormContainer = ({ from }) => {
               }}
               color={toggleView ? "primary" : ""}
             >
-              BRF
+              BRF/Företag
             </Button>
           </ButtonGroup>
         </Grid>

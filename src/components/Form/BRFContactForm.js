@@ -16,26 +16,26 @@ import * as yup from "yup";
 
 const validationSchema = yup.object({
   brfName: yup
-    .string("Ange ditt BRF / Föreningens namn.")
-    .min(4, "Föreningens namn bör innehålla minst 4 bokstäver.")
+    .string("Ange ditt BRF/Företags namn.")
+    .min(4, "Föreningens/Företagets namn bör innehålla minst 4 bokstäver.")
     .required("Du måste fylla i ett namn."),
   street: yup
-    .string("Ange föreningens address.")
+    .string("Ange föreningens/företagets address.")
     .required("Du måste fylla i en gatuadress."),
   postalCode: yup
-    .string("Ange föreningens postnummer.")
+    .string("Ange föreningens/företagets postnummer.")
     .min(5, "Du måste minst ha 5 bokstäver.")
     .required("Du måste fylla i ett postnummer."),
-  city: yup.string("Ange föreningens ort.").required("Du måste ange en ort."),
+  city: yup.string("Ange föreningens/företagets ort.").required("Du måste ange en ort."),
   email: yup
-    .string("Ange en mail address")
-    .required("Du måste ange en email address."),
+    .string("Ange en e-mail address")
+    .required("Du måste ange en e-mail address."),
   phoneNumber: yup
     .string("Ange ett telefonnummer.")
     .required("Du måste ange ett telefonnummer"),
   contact: yup
-    .string("Ange en kontakt person / referens")
-    .required("Du måste ange en referens / kontaktperson"),
+    .string("Ange en kontaktperson/referens")
+    .required("Du måste ange en referens/kontaktperson"),
   byggLov: yup
     .string("Ange om bygglov finns eller ej.")
     .required("Du måste ange om bygglov finns."),
@@ -103,7 +103,7 @@ const ContactForm = () => {
     >
       <Grid item container xs={12} spacing={3} className={classes.grid}>
         <Grid item xs={12}>
-          <Typography variant="body1">BRF Uppgifter:</Typography>
+          <Typography variant="body1">BRF/Företag Uppgifter:</Typography>
         </Grid>
         <Grid item xs={12} lg={6} md={6}>
           <TextField

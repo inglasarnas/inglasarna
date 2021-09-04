@@ -59,13 +59,21 @@ const DesktopNavbar = (props) => {
 
   const [productsAnchor, setProductsAnchor] = useState(null);
   const [kontaktAnchor, setKontaktAnchor] = useState(null);
+  const [pricesAnchor, setPricesAnchor] = useState(null);
 
 
   const classes = useStyles();
+const handlePricesClick = (e) => {
+  setPricesAnchor(e.currentTarget);
+};
+const handlePricesClose = () => {
+  props.history.push("/prices")
+};
 
   const handleProductsClick = (e) => {
     setProductsAnchor(e.currentTarget);
   };
+
 
 
   const handleProductsClose = () => {
@@ -105,16 +113,16 @@ const DesktopNavbar = (props) => {
             </Typography>
           </ListItem>
           <ListItem button 
-            aria-controls="infoMenu"
+            aria-controls="productsMenu"
             aria-haspopup="true"
             onClick={handleProductsClick}>
             <Typography color="primary" variant="h4" className={classes.text}>
               Produkter <AiFillCaretDown className={classes.caret} />
             </Typography>
           </ListItem>
-          <ListItem button onClick={() => props.history.push("/prices")}>
+          <ListItem button aria-controls="pricesMenu" aria-haspopup="true" onClick={handlePricesClick}>
             <Typography color="primary" variant="h4" className={classes.text}>
-              Kostnad
+              Kostnad <AiFillCaretDown className={classes.caret} />
             </Typography>
           </ListItem>
           <ListItem button onClick={() => props.history.push("/gallery")}>
@@ -139,10 +147,30 @@ const DesktopNavbar = (props) => {
           </ListItem>
         </List>
       </Grid>
-      {/* INFORMATION-MENY */}
+      {/* KOSTNAD MENY*/}
       <Menu
 
-        id="infoMenu"
+        id="pricesMenu"
+        anchorEl={pricesAnchor}
+        open={Boolean(pricesAnchor)}
+        onClose={handlePricesClose}
+        TransitionComponent={Fade}
+        className={classes.dropdownMenu}
+      >
+        <MenuItem onClick={() => handleProductsPush("/products")} className={classes.dropdownLink}>
+          Privat
+        </MenuItem>
+        <MenuItem onClick={() => handleProductsPush("/products")} className={classes.dropdownLink}>
+          Brf & Företag
+        </MenuItem>
+        <MenuItem onClick={() => handleProductsPush("/products")} className={classes.dropdownLink}>
+          Finansiering
+        </MenuItem>
+      </Menu>
+      {/* PRODUKT-MENY */}
+      <Menu
+
+        id="productsMenu"
         anchorEl={productsAnchor}
         open={Boolean(productsAnchor)}
         onClose={handleProductsClose}
@@ -173,6 +201,9 @@ const DesktopNavbar = (props) => {
         </MenuItem>
         <MenuItem onClick={() => handleKontaktPush("/contact/brf")} className={classes.dropdownLink}>
           BRF
+        </MenuItem>
+        <MenuItem onClick={() => handleKontaktPush("/contact/brf")} className={classes.dropdownLink}>
+          Företag
         </MenuItem>
         <MenuItem onClick={() => handleKontaktPush("/contact/om")} className={classes.dropdownLink}>
           Om Oss
