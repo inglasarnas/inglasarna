@@ -110,7 +110,7 @@ const MobileNavbar = (props) => {
             <List className={classes.nestedList}>
             <ListItem
               button
-              onClick={() => props.history.push("/products")}
+              onClick={() => props.history.push("/products/balkong")}
             >
               <Typography variant="h4" color="primary">
                 Balkong
@@ -119,7 +119,7 @@ const MobileNavbar = (props) => {
 
             <ListItem
               button
-              onClick={() => props.history.push("/products")}
+              onClick={() => props.history.push("/products/terass")}
             >
               <Typography variant="h4" color="primary">
                 Terass
@@ -127,7 +127,7 @@ const MobileNavbar = (props) => {
               </ListItem>
               <ListItem
               button
-              onClick={() => props.history.push("/products")}
+              onClick={() => props.history.push("/products/tillbehör")}
             >
               <Typography variant="h4" color="primary">
                 Tillbehör

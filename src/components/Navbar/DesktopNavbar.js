@@ -191,19 +191,19 @@ const DesktopNavbar = (props) => {
         className={classes.dropdownMenu}
       >
         <MenuItem
-          onClick={() => handleProductsPush("/products")}
+          onClick={() => handleProductsPush("/products/balkong")}
           className={classes.dropdownLink}
         >
           Balkong
         </MenuItem>
         <MenuItem
-          onClick={() => handleProductsPush("/products")}
+          onClick={() => handleProductsPush("/products/terass")}
           className={classes.dropdownLink}
         >
           Terass
         </MenuItem>
         <MenuItem
-          onClick={() => handleProductsPush("/products")}
+          onClick={() => handleProductsPush("/products/tillbehör")}
           className={classes.dropdownLink}
         >
           Tillbehör

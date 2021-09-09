@@ -1,4 +1,3 @@
-
 import { ThemeProvider } from "@material-ui/core/styles";
 import { theme } from "./assets/theme";
 import { Container } from "@material-ui/core";
@@ -13,7 +12,6 @@ import How from "./views/How";
 import Gallery from "./views/Gallery";
 import Contact from "./views/Contact";
 
-
 function App(props) {
   return (
     <ThemeProvider theme={theme}>
@@ -26,8 +24,17 @@ function App(props) {
             <Route path="/" exact={true}>
               <Start />
             </Route>
-            <Route path="/products">
+            <Route exact={true} path="/products">
               <Products />
+            </Route>
+            <Route path="/products/balkong">
+              <Products from="balkong" />
+            </Route>
+            <Route path="/products/terass">
+              <Products from="terass" />
+            </Route>
+            <Route path="/products/tillbehör">
+              <Products from="tillbehör" />
             </Route>
             <Route path="/prices">
               <Prices />

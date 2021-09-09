@@ -43,13 +43,13 @@ const Contact = ({ from }) => {
   useEffect(() => {
     switch (from) {
       case "om":
-        omOss.current.scrollIntoView({ behavior: "smooth" });
+        omOss.current.scrollIntoView({ behavior: "smooth", block: "center" });
         break;
       case "brf":
-        form.current.scrollIntoView({ behavior: "smooth" });
+        form.current.scrollIntoView({ behavior: "smooth", block: "center" });
         break;
       case "privat":
-        form.current.scrollIntoView({ behavior: "smooth" });
+        form.current.scrollIntoView({ behavior: "smooth", block: "center" });
         break;
       default:
         break;
@@ -69,7 +69,7 @@ const Contact = ({ from }) => {
           kontaktformuläret här nertill.
         </Typography>
       </div>
-      <div className={classes.marginBottom5} ref={form} />
+      <div className={classes.marginBottom5} />
       <ContactBox
         image={logo}
         name="+4676 337 6264"
@@ -77,6 +77,7 @@ const Contact = ({ from }) => {
         email="info@inglasarna.se"
       />
       <div className={classes.marginBottom5} />
+      <div ref={form}></div>
       <FormContainer from={from} />
       <div className={classes.marginBottom5} />
       <div className={classes.textContainer} ref={omOss}>
