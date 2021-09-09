@@ -1,5 +1,5 @@
 # Preview of Inglasarna
-https://60cb257a8f29f00008c72970--vigilant-kirch-c898e8.netlify.app/
+https://competent-saha-fd1e8f.netlify.app/
 
 # Getting Started with Create React App
 
