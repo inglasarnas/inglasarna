@@ -100,7 +100,7 @@ const ContactForm = () => {
         body: encode({ "form-name": "Private Contact", ...data }),
       })
         .then((data) => {
-          if (data.status === "200") {
+          if (data.status === 200) {
             setFormLoadig(false);
             setFormError(false);
             setFormSuccess(true);
