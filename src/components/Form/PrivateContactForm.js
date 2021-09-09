@@ -1,7 +1,17 @@
-import React from "react";
-import { Grid, TextField, Button, makeStyles } from "@material-ui/core";
+import React, { useState } from "react";
+import {
+  Grid,
+  TextField,
+  Button,
+  makeStyles,
+  Typography,
+} from "@material-ui/core";
 import { useFormik } from "formik";
 import * as yup from "yup";
+
+import CircularProgress from "@material-ui/core/CircularProgress";
+import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
+import ErrorOutlineIcon from "@material-ui/icons/ErrorOutline";
 
 const validationSchema = yup.object({
   name: yup
@@ -37,6 +47,23 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: "none",
     },
   },
+  sendBox: {
+    display: "flex",
+    alignItems: "center",
+  },
+  sendBtn: {
+    marginRight: "2rem",
+  },
+  successIcon: {
+    marginRight: "2rem",
+    fontSize: "33px",
+    color: "green",
+  },
+  errorIcon: {
+    marginRight: "2rem",
+    fontSize: "33px",
+    color: "red",
+  },
 }));
 
 const encode = (data) => {
@@ -46,6 +73,10 @@ const encode = (data) => {
 };
 
 const ContactForm = () => {
+  const [formLoading, setFormLoadig] = useState(false);
+  const [formError, setFormError] = useState(false);
+  const [formSuccess, setFormSuccess] = useState(false);
+
   const classes = useStyles();
   const formik = useFormik({
     initialValues: {
@@ -59,17 +90,34 @@ const ContactForm = () => {
       sendToNetlify(values);
     },
   });
-  
+
   const sendToNetlify = (data) => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "Private Contact", ...data, }),
-    })
-      .then(() => console.log(data))
-      .catch((error) => alert(error));
+    setFormLoadig(true);
+    setTimeout(() => {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "Private Contact", ...data }),
+      })
+        .then((data) => {
+          if (data.status === "200") {
+            setFormLoadig(false);
+            setFormError(false);
+            setFormSuccess(true);
+          } else {
+            setFormLoadig(false);
+            setFormSuccess(false);
+            setFormError(true);
+          }
+        })
+        .catch((error) => {
+          setFormLoadig(false);
+          setFormSuccess(false);
+          setFormError(true);
+        });
+    }, 1000);
   };
-  
+
   return (
     <form
       noValidate
@@ -151,10 +199,38 @@ const ContactForm = () => {
             helperText={formik.touched.message && formik.errors.message}
           />
         </Grid>
-        <Grid item xs={12}>
-          <Button color="primary" variant="contained" type="submit">
+        <Grid item xs={12} className={classes.sendBox}>
+          <Button
+            className={classes.sendBtn}
+            color="primary"
+            variant="contained"
+            type="submit"
+          >
             Skicka
           </Button>
+          {formLoading && <CircularProgress />}
+          {formSuccess ? (
+            <>
+              <CheckCircleOutlineIcon className={classes.successIcon} />
+              <Typography variant="body1">
+                Ditt meddelande är nu skickat till oss, vi återkommer så snart
+                vi kan.
+              </Typography>
+            </>
+          ) : (
+            ""
+          )}
+          {formError ? (
+            <>
+              <ErrorOutlineIcon className={classes.errorIcon} />
+              <Typography variant="body1">
+                Det blev något fel, Testa att skicka ditt meddelande direkt till
+                mailaddressen ovan.
+              </Typography>
+            </>
+          ) : (
+            ""
+          )}
         </Grid>
       </Grid>
     </form>
