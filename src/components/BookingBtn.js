@@ -4,7 +4,6 @@ import { withRouter } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   btn: {
-    position: "webkit-sticky",
     position: "fixed",
     top: "80%",
     left: "calc(100vw - 230px)",
