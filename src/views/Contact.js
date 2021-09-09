@@ -3,7 +3,7 @@ import ContactBox from "../components/ContactBoxes/ContactBox";
 import FormContainer from "../components/Form/FormContainer";
 import { Typography, makeStyles } from "@material-ui/core";
 import { useEffect, useRef } from "react";
-import logo from '../assets/media/logotyp.svg';
+import logo from "../assets/media/logotyp.svg";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "5vh",
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
-    width: '40vw'
+    width: "40vw",
   },
   marginBottom5: {
     marginBottom: "5vh",
@@ -26,22 +26,33 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "1vh",
   },
   marginContainer: {
-    marginBottom: '5vw',
+    marginBottom: "5vw",
   },
   title: {
     marginBottom: "1vh",
   },
   boldText: {
     fontWeight: 600,
-  }
+  },
 }));
 const Contact = ({ from }) => {
   const classes = useStyles();
   const omOss = useRef(null);
+  const form = useRef(null);
 
   useEffect(() => {
-    if (from === "om") {
-      omOss.current.scrollIntoView({ behavior: "smooth" });
+    switch (from) {
+      case "om":
+        omOss.current.scrollIntoView({ behavior: "smooth" });
+        break;
+      case "brf":
+        form.current.scrollIntoView({ behavior: "smooth" });
+        break;
+      case "privat":
+        form.current.scrollIntoView({ behavior: "smooth" });
+        break;
+      default:
+        break;
     }
   }, [from]);
   return (
@@ -58,7 +69,7 @@ const Contact = ({ from }) => {
           kontaktformuläret här nertill.
         </Typography>
       </div>
-      <div className={classes.marginBottom5} />
+      <div className={classes.marginBottom5} ref={form} />
       <ContactBox
         image={logo}
         name="+4676 337 6264"
@@ -73,26 +84,37 @@ const Contact = ({ from }) => {
           Vi är specialister på inglasning i Linköping och Norrköping
         </Typography>
         <Typography variant="body1" className={classes.marginBottom1}>
-        Grundarna av Inglasarna har över 13 års erfarenhet av Lumons inglasning, såväl för privatperson som bostadsrättsföreningar.
-        Vi arbetar lokalt i Linköping och Norrköping med omnejd. Det gör att vi känner till villkoren för inglasning väldigt bra för området och har nära till våra kunder, varesig det rör sig om en ny inglasning eller service av en befintlig sådan.
+          Grundarna av Inglasarna har över 13 års erfarenhet av Lumons
+          inglasning, såväl för privatperson som bostadsrättsföreningar. Vi
+          arbetar lokalt i Linköping och Norrköping med omnejd. Det gör att vi
+          känner till villkoren för inglasning väldigt bra för området och har
+          nära till våra kunder, varesig det rör sig om en ny inglasning eller
+          service av en befintlig sådan.
         </Typography>
         <Typography variant="h3" className={classes.marginBottom1}>
-          Vi är säkra på kvaliteten i vårat arbete och ger dig därför 5 års garanti på både installation och produkt.
+          Vi är säkra på kvaliteten i vårat arbete och ger dig därför 5 års
+          garanti på både installation och produkt.
         </Typography>
         <Typography variant="body1" className={classes.marginBottom1}>
-          För oss är det viktigt att ni får den produkt som ni önskat er.
-          Därför kommer vi ut till er för att se över vilka speciella villkor som gäller hos just er, tar mått och går igenom vilka möjligheter som passar er.
-          Därefter kan vi presentera ett förslag på lösning, kostnad och tid.
-          För representanter av bostadsrättsföreningar eller företag så kan vi ta fram ett förmånligt förslag för hela fastigheten.
-          Vi hjälper dig sedan att presentera förslaget för styrelsen och övriga medlemmar.
+          För oss är det viktigt att ni får den produkt som ni önskat er. Därför
+          kommer vi ut till er för att se över vilka speciella villkor som
+          gäller hos just er, tar mått och går igenom vilka möjligheter som
+          passar er. Därefter kan vi presentera ett förslag på lösning, kostnad
+          och tid. För representanter av bostadsrättsföreningar eller företag så
+          kan vi ta fram ett förmånligt förslag för hela fastigheten. Vi hjälper
+          dig sedan att presentera förslaget för styrelsen och övriga medlemmar.
         </Typography>
         <Typography variant="h3" className={classes.marginBottom1}>
-          För att du ska få den bästa kvaliteten så sköter vi hela inglasningsprocessen själva.
+          För att du ska få den bästa kvaliteten så sköter vi hela
+          inglasningsprocessen själva.
         </Typography>
         <Typography variant="body1">
-          Vi vill kunna garantera er att kvaliteten blir den bästa som ni kan hitta på marknaden. Så vi kommer att hjälpa er från planering till bygglov, från finansiering till leverans och montage.
-          Det är därför vi också vågar ge dig en garanti på 5 år, på både installation och material.
-          Är ni intresserad så kontakta oss, så gör vi ett kostnadsfritt besök hos er!
+          Vi vill kunna garantera er att kvaliteten blir den bästa som ni kan
+          hitta på marknaden. Så vi kommer att hjälpa er från planering till
+          bygglov, från finansiering till leverans och montage. Det är därför vi
+          också vågar ge dig en garanti på 5 år, på både installation och
+          material. Är ni intresserad så kontakta oss, så gör vi ett
+          kostnadsfritt besök hos er!
         </Typography>
       </div>
     </div>

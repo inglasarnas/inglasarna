@@ -52,29 +52,25 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "5vh",
   },
   dropdownLink: {
-    padding: '1vw'
-  }
+    padding: "1vw",
+  },
 }));
 const DesktopNavbar = (props) => {
-
   const [productsAnchor, setProductsAnchor] = useState(null);
   const [kontaktAnchor, setKontaktAnchor] = useState(null);
   const [pricesAnchor, setPricesAnchor] = useState(null);
 
-
   const classes = useStyles();
-const handlePricesClick = (e) => {
-  setPricesAnchor(e.currentTarget);
-};
-const handlePricesClose = () => {
-  props.history.push("/prices")
-};
+  const handlePricesClick = (e) => {
+    setPricesAnchor(e.currentTarget);
+  };
+  const handlePricesClose = () => {
+    props.history.push("/prices");
+  };
 
   const handleProductsClick = (e) => {
     setProductsAnchor(e.currentTarget);
   };
-
-
 
   const handleProductsClose = () => {
     setProductsAnchor(null);
@@ -102,25 +98,32 @@ const handlePricesClose = () => {
     <Grid container className={classes.container}>
       <Grid item md={2}>
         <Link to="/">
-        <img src={Logo} alt="inglasarnas logotyp" className={classes.logo} />
+          <img src={Logo} alt="inglasarnas logotyp" className={classes.logo} />
         </Link>
       </Grid>
       <Grid item md={10}>
         <List component="nav" className={classes.linkContainer}>
-          <ListItem button onClick={() => props.history.push("/how")} >
+          <ListItem button onClick={() => props.history.push("/how")}>
             <Typography color="primary" variant="h4" className={classes.text}>
-              Varför inglasning? 
+              Varför inglasning?
             </Typography>
           </ListItem>
-          <ListItem button 
+          <ListItem
+            button
             aria-controls="productsMenu"
             aria-haspopup="true"
-            onClick={handleProductsClick}>
+            onClick={handleProductsClick}
+          >
             <Typography color="primary" variant="h4" className={classes.text}>
               Produkter <AiFillCaretDown className={classes.caret} />
             </Typography>
           </ListItem>
-          <ListItem button aria-controls="pricesMenu" aria-haspopup="true" onClick={handlePricesClick}>
+          <ListItem
+            button
+            aria-controls="pricesMenu"
+            aria-haspopup="true"
+            onClick={handlePricesClick}
+          >
             <Typography color="primary" variant="h4" className={classes.text}>
               Kostnad <AiFillCaretDown className={classes.caret} />
             </Typography>
@@ -140,7 +143,10 @@ const handlePricesClose = () => {
               Kontakt <AiFillCaretDown className={classes.caret} />
             </Typography>
           </ListItem>
-          <ListItem button onClick={() => props.history.push("/contact")}>
+          <ListItem
+            button
+            onClick={() => props.history.push("/contact/privat")}
+          >
             <Typography color="primary" variant="h4" className={classes.text}>
               Gratis offert
             </Typography>
@@ -149,7 +155,6 @@ const handlePricesClose = () => {
       </Grid>
       {/* KOSTNAD MENY*/}
       <Menu
-
         id="pricesMenu"
         anchorEl={pricesAnchor}
         open={Boolean(pricesAnchor)}
@@ -157,19 +162,27 @@ const handlePricesClose = () => {
         TransitionComponent={Fade}
         className={classes.dropdownMenu}
       >
-        <MenuItem onClick={() => handleProductsPush("/products")} className={classes.dropdownLink}>
+        <MenuItem
+          onClick={() => handleProductsPush("/products")}
+          className={classes.dropdownLink}
+        >
           Privat
         </MenuItem>
-        <MenuItem onClick={() => handleProductsPush("/products")} className={classes.dropdownLink}>
+        <MenuItem
+          onClick={() => handleProductsPush("/products")}
+          className={classes.dropdownLink}
+        >
           Brf & Företag
         </MenuItem>
-        <MenuItem onClick={() => handleProductsPush("/products")} className={classes.dropdownLink}>
+        <MenuItem
+          onClick={() => handleProductsPush("/products")}
+          className={classes.dropdownLink}
+        >
           Finansiering
         </MenuItem>
       </Menu>
       {/* PRODUKT-MENY */}
       <Menu
-
         id="productsMenu"
         anchorEl={productsAnchor}
         open={Boolean(productsAnchor)}
@@ -177,13 +190,22 @@ const handlePricesClose = () => {
         TransitionComponent={Fade}
         className={classes.dropdownMenu}
       >
-        <MenuItem onClick={() => handleProductsPush("/products")} className={classes.dropdownLink}>
+        <MenuItem
+          onClick={() => handleProductsPush("/products")}
+          className={classes.dropdownLink}
+        >
           Balkong
         </MenuItem>
-        <MenuItem onClick={() => handleProductsPush("/products")} className={classes.dropdownLink}>
+        <MenuItem
+          onClick={() => handleProductsPush("/products")}
+          className={classes.dropdownLink}
+        >
           Terass
         </MenuItem>
-        <MenuItem onClick={() => handleProductsPush("/products")} className={classes.dropdownLink}>
+        <MenuItem
+          onClick={() => handleProductsPush("/products")}
+          className={classes.dropdownLink}
+        >
           Tillbehör
         </MenuItem>
       </Menu>
@@ -196,16 +218,28 @@ const handlePricesClose = () => {
         TransitionComponent={Fade}
         className={classes.dropdownMenu}
       >
-        <MenuItem onClick={() => handleKontaktPush("/contact/privat")} className={classes.dropdownLink}>
+        <MenuItem
+          onClick={() => handleKontaktPush("/contact/privat")}
+          className={classes.dropdownLink}
+        >
           Privat
         </MenuItem>
-        <MenuItem onClick={() => handleKontaktPush("/contact/brf")} className={classes.dropdownLink}>
+        <MenuItem
+          onClick={() => handleKontaktPush("/contact/brf")}
+          className={classes.dropdownLink}
+        >
           BRF
         </MenuItem>
-        <MenuItem onClick={() => handleKontaktPush("/contact/brf")} className={classes.dropdownLink}>
+        <MenuItem
+          onClick={() => handleKontaktPush("/contact/brf")}
+          className={classes.dropdownLink}
+        >
           Företag
         </MenuItem>
-        <MenuItem onClick={() => handleKontaktPush("/contact/om")} className={classes.dropdownLink}>
+        <MenuItem
+          onClick={() => handleKontaktPush("/contact/om")}
+          className={classes.dropdownLink}
+        >
           Om Oss
         </MenuItem>
       </Menu>
