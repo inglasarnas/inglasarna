@@ -4,7 +4,7 @@ import carousel03 from './media/Carousel03.jpg';
 import carousel04 from './media/Carousel04.jpg';
 import carousel05 from './media/Carousel05.jpg';
 import productTerass from './media/ProductTerass.jpg';
-
+//BALKONG-GALLERI
 import Balcony01 from './media/Galleri Balkong/Balcony01.jpg';
 import Balcony02 from './media/Galleri Balkong/Balcony02.jpg';
 import Balcony03 from './media/Galleri Balkong/Balcony03.jpg';
@@ -33,7 +33,49 @@ import Balcony25 from './media/Galleri Balkong/Balcony25.jpg';
 import Balcony26 from './media/Galleri Balkong/Balcony26.jpeg';
 import Balcony27 from './media/Galleri Balkong/Balcony27.jpeg';
 import Balcony28 from './media/Galleri Balkong/Balcony28.jpeg';
+//TERASSGALLERI
+import Terass01 from './media/Galleri Terass/Terass01.jpg';
+import Terass02 from './media/Galleri Terass/Terass02.jpg';
+import Terass03 from './media/Galleri Terass/Terass03.jpg';
+import Terass04 from './media/Galleri Terass/Terass04.jpg';
+import Terass05 from './media/Galleri Terass/Terass05.jpg';
+import Terass06 from './media/Galleri Terass/Terass06.jpg';
+import Terass07 from './media/Galleri Terass/Terass07.jpg';
+import Terass08 from './media/Galleri Terass/Terass08.jpg';
+import Terass09 from './media/Galleri Terass/Terass09.jpg';
+import Terass10 from './media/Galleri Terass/Terass10.jpg';
+import Terass11 from './media/Galleri Terass/Terass11.jpg';
+import Terass12 from './media/Galleri Terass/Terass12.jpg';
+import Terass13 from './media/Galleri Terass/Terass13.jpg';
+import Terass14 from './media/Galleri Terass/Terass14.jpg';
+import Terass15 from './media/Galleri Terass/Terass15.jpg';
+import Terass16 from './media/Galleri Terass/Terass16.jpg';
+import Terass17 from './media/Galleri Terass/Terass17.jpg';
+import Terass18 from './media/Galleri Terass/Terass18.jpg';
+import Terass19 from './media/Galleri Terass/Terass19.jpg';
+import Terass20 from './media/Galleri Terass/Terass20.jpg';
+import Terass21 from './media/Galleri Terass/Terass21.jpg';
+import Terass22 from './media/Galleri Terass/Terass22.jpg';
+import Terass23 from './media/Galleri Terass/Terass23.jpg';
+import Terass24 from './media/Galleri Terass/Terass24.jpg';
+import Terass25 from './media/Galleri Terass/Terass25.jpg';
+import Terass26 from './media/Galleri Terass/Terass26.jpg';
+import Terass27 from './media/Galleri Terass/Terass27.jpg';
+import Terass28 from './media/Galleri Terass/Terass28.jpg';
+import Terass29 from './media/Galleri Terass/Terass29.jpg';
+import Terass30 from './media/Galleri Terass/Terass30.jpg';
+import Terass31 from './media/Galleri Terass/Terass31.jpg';
+//TILLBEHORGALLERI
+import Tillbehor01 from './media/Galleri Tillbehör/tillbehor01.jpeg';
+import Tillbehor02 from './media/Galleri Tillbehör/tillbehor02.jpeg';
+import Tillbehor03 from './media/Galleri Tillbehör/tillbehor03.jpg';
+import Tillbehor04 from './media/Galleri Tillbehör/tillbehor04.jpg';
+import Tillbehor05 from './media/Galleri Tillbehör/tillbehor05.jpg';
+import Tillbehor06 from './media/Galleri Tillbehör/tillbehor06.jpg';
+import Tillbehor07 from './media/Galleri Tillbehör/tillbehor07.jpeg'; 
+import Tillbehor08 from './media/Galleri Tillbehör/tillbehor08.jpg';
 
+//start carousel
 export const carouselImages = [
   {
     title: 'Solnedgång, inglasad balkong.',
@@ -57,6 +99,7 @@ export const carouselImages = [
   },
 ];
 
+//full gallery for balcony
 export const fullBalconyGallery = [
   {
     img: Balcony01,
@@ -64,114 +107,115 @@ export const fullBalconyGallery = [
   },
   {
     img: Balcony02,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony03,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony04,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony05,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony06,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony07,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony08,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony09,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony10,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony11,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony12,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony13,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony14,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony15,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony16,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony17,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony18,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony19,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony20,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony21,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony22,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony23,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony24,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony25,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony26,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony27,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
   {
     img: Balcony28,
-    imgAlt: "Balkonginglasning"
+    title: "Balkonginglasning"
   },
 ]
 
+//small gallery for balcony, on product-page
   export const exampleBalconygallery = [
     {
       img: Balcony01,
@@ -199,71 +243,220 @@ export const fullBalconyGallery = [
     },
   ]
 
-  export const contactInfo = [
-    {
-      name: 'Förnamn Efternamn',
-      contact: '070 000 0000',
-      image: 'https://images.unsplash.com/photo-1591258739299-5b65d5cbb235?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
-    },
-    {
-      name: 'Förnamn Efternamn',
-      contact: '070 000 0000',
-      image: 'https://images.unsplash.com/photo-1591258739299-5b65d5cbb235?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
-    },
-    {
-      name: 'Förnamn Efternamn',
-      contact: '070 000 0000',
-      image: 'https://images.unsplash.com/photo-1591258739299-5b65d5cbb235?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
-    },
-  ];
+//full gallery for terass
+export const fullTerassGallery = [
+  {
+    img: Terass01,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass02,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass03,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass04,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass05,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass06,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass07,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass08,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass09,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass10,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass11,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass12,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass13,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass14,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass15,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass16,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass17,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass18,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass19,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass20,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass21,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass22,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass23,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass24,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass25,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass26,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass27,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass28,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass29,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass30,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass31,
+    title: "Terassinglasning"
+  },
+  
+];
 
-  export const cardsWithBgImg = [
-    {
-      title: "Rubrik1",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit viverra orci fermentum dictum convallis fermentum eget dictum urna. Quis lacus facilisis iaculis vitae. Turpis nulla volutpat nisi dui mi. Eu in donec quam feugiat aliquet ultrices consectetur sem. Vestibulum in.",
-      image:
-        `url(${carousel01})`,
-    },
-    {
-      title: "Rubrik2",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit viverra orci fermentum dictum convallis fermentum eget dictum urna. Quis lacus facilisis iaculis vitae. Turpis nulla volutpat nisi dui mi. Eu in donec quam feugiat aliquet ultrices consectetur sem. Vestibulum in.",
-      image:`url(${carousel02})`
-    },
-    {
-      title: "Rubrik3",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit viverra orci fermentum dictum convallis fermentum eget dictum urna. Quis lacus facilisis iaculis vitae. Turpis nulla volutpat nisi dui mi. Eu in donec quam feugiat aliquet ultrices consectetur sem. Vestibulum in.",
-      image:
-      `url(${carousel03})`    },
-    {
-      title: "Rubrik4",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit viverra orci fermentum dictum convallis fermentum eget dictum urna. Quis lacus facilisis iaculis vitae. Turpis nulla volutpat nisi dui mi. Eu in donec quam feugiat aliquet ultrices consectetur sem. Vestibulum in.",
-      image:
-      `url(${carousel04})`    },
-  ];
+//small gallery for terass, on product-page
+export const exampleTerassGallery = [
+  {
+    img: Terass01,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass06,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass11,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass16,
+    title: "Terassinglasning"
+  },
+  {
+    img: Terass21,
+    title: "Terassinglasning"
+  },
+];
 
-  export const fadedImgBoxes = [
-    {
-      title: 'Balkong',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit viverra orci fermentum dictum convallis fermentum eget dictum urna. Quis lacus facilisis iaculis vitae. Turpis nulla volutpat nisi dui mi. Eu in donec quam feugiat aliquet ultrices consectetur sem. Vestibulum in.',
-      image:
-      carousel01    },
-    {
-      title: 'Terass',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit viverra orci fermentum dictum convallis fermentum eget dictum urna. Quis lacus facilisis iaculis vitae. Turpis nulla volutpat nisi dui mi. Eu in donec quam feugiat aliquet ultrices consectetur sem. Vestibulum in.',
-      image:
-      productTerass    },
-    {
-      title: 'Skjutdörrar',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit viverra orci fermentum dictum convallis fermentum eget dictum urna. Quis lacus facilisis iaculis vitae. Turpis nulla volutpat nisi dui mi. Eu in donec quam feugiat aliquet ultrices consectetur sem. Vestibulum in.',
-      image:
-      carousel05    },
-    {
-      title: 'Tillbehör',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit viverra orci fermentum dictum convallis fermentum eget dictum urna. Quis lacus facilisis iaculis vitae. Turpis nulla volutpat nisi dui mi. Eu in donec quam feugiat aliquet ultrices consectetur sem. Vestibulum in.',
-      image:
-      carousel03    },
-  ];
+//full gallery for tillbehör
+export const fullTillbehorGallery = [
+  {
+    img: Tillbehor01,
+    title: "Tillbehör inglasning"
+  },
+  {
+    img: Tillbehor02,
+    title: "Tillbehör inglasning"
+  },
+  {
+    img: Tillbehor03,
+    title: "Tillbehör inglasning"
+  },
+  {
+    img: Tillbehor04,
+    title: "Tillbehör inglasning"
+  },
+  {
+    img: Tillbehor05,
+    title: "Tillbehör inglasning"
+  },  
+  {
+    img: Tillbehor06,
+    title: "Tillbehör inglasning"
+  },
+  {
+    img: Tillbehor07,
+    title: "Tillbehör inglasning"
+  },
+  {
+    img: Tillbehor08,
+    title: "Tillbehör inglasning"
+  },
+];
 
+//small gallery for tillbehor, on product-page
+export const exampleTillbehorGallery = [
+  {
+    img: Tillbehor01,
+    title: "Tillbehör inglasning"
+  },
+  {
+    img: Tillbehor03,
+    title: "Tillbehör inglasning"
+  },
+  {
+    img: Tillbehor05,
+    title: "Tillbehör inglasning"
+  },
+  {
+    img: Tillbehor06,
+    title: "Tillbehör inglasning"
+  },
+  {
+    img: Tillbehor08,
+    title: "Tillbehör inglasning"
+  },
+];
+
+//horizontal info-cards with blue icon on start-page
   export const infoIconCards = [
     {
       rubrik: "Överlägsen design och funktion",
@@ -282,6 +475,7 @@ export const fullBalconyGallery = [
     },
   ];
 
+  //horizontal title with 3 vertical info-boxes and bgimg on start-page
   export const threeColInfoBoxes = [
     {
       rubrik: "Vi planerar",
