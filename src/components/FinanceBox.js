@@ -35,10 +35,9 @@ const useStyles = makeStyles((theme) => ({
     width: "70vw",
   },
   wasaContainer : {
-    background: 'url("https://avatars.githubusercontent.com/u/14995184?s=280&v=4")',
-    backgroundSize: 'contain',
-    height: '15vw',
-    backgroundRepeat: 'no-repeat',
+    background: 'url("https://cdn.bytbilcms.com/uploads/sites/57/2020/03/wasa-kredit-logo.png")',
+    backgroundSize: '100%',
+    height: '10vw',
 }
 
 }))
@@ -47,19 +46,15 @@ const classes = useStyles();
   return (
     <Grid container spacing={5} className={classes.container}>
       <Grid item xs={10} className={classes.textContainer}>
-        <Typography variant='h2' className={classes.margin}>Vi hjälper dig med finansiering</Typography>
+        <Typography variant='h2' className={classes.margin}>Vi hjälper er med finansiering</Typography>
         <Typography variant='body1' className={classes.text}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac justo
-          commodo, malesuada odio vitae, euismod ante. Mauris quis sem laoreet,
-          lacinia neque eget, venenatis ligula. Maecenas pharetra tincidunt
-          sapien vel mattis. Fusce in faucibus nunc. Integer et velit pulvinar,
-          ultrices odio interdum, mattis tellus. Duis nisl orci, porta vel nisi
-          sit amet, sollicitudin consequat est. Aenean fermentum id arcu in
-          suscipit.
+          Om du funderar på att ta ett lån för att kunna finansiera idén om balkonginglasning, så samarbetar Inglasarna med Wasa Kredit.
+          Det finns möjlighet att låna mellan 10.000 till 250.000 kronor utan säkerhet. Givetvis har de några grundkrav.<br/><br/>
+          Tryck på knappen nedan för att beräkna din finansieringskostnad och läsa mer om finanseringen.
         </Typography>
-        <div className={classes.wasaContainer}></div>
+        <img src="https://cdn.bytbilcms.com/uploads/sites/57/2020/03/wasa-kredit-logo.png" alt="wasa kredit logotyp" className={classes.wasaContainer}/>
         <Button variant='contained' color='primary' className={classes.margin}>
-          Räkna på finansiering
+          Räkna på er finansiering
         </Button>
       </Grid>
     </Grid>

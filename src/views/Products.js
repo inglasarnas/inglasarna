@@ -5,6 +5,7 @@ import BoxWithSideImg from "../components/BoxWithSideImg";
 import ProductTerass from "../assets/media/ProductTerass.jpg";
 import Carousel01 from "../assets/media/Carousel01.jpg";
 import Carousel03 from "../assets/media/Carousel03.jpg";
+import GridGallery from "../components/GridGallery";
 
 const useStyles = makeStyles(() => ({
   container: {
@@ -73,9 +74,11 @@ const Products = ({ from }) => {
                 möte, ger vi er råd och tips om vad som skulle passa er balkong.
                 Vi har lång erfarenhet av att skräddarsy lösningar till
                 privatpersoner, bostadsrättsföreningar och företag.
+                <br/>
+                <br/>
+                De vanligaste typerna av balkonginglasningar vi levererar är:
               </Typography>
               <Typography variant="body1">
-                De vanligaste typerna av balkonginglasningar vi levererar är:
                 <ul>
                   <li>Ramfritt vik-in-system i fullhöjdsglas</li>
                   <li>Skjutglas med ram - delat system</li>
@@ -87,15 +90,15 @@ const Products = ({ from }) => {
                 Vi är helt säkra på att ni kommer bli riktigt nöjda med er nya
                 balkong. Därför vågar vi lova er hela 5 års garanti på material
                 och montage.
-                <br />
-                <br />
-                Se mer i vårat bildgalleri:
               </Typography>
             </>
           }
         />
       </Grid>
-      <Grid item xs={12} ref={terass}>
+      <Grid item xs={12} className={classes.marginContainer}>
+        <Typography variant="body1">Se mer i vårat bildgalleri</Typography>
+      </Grid>
+      <Grid item xs={12} ref={terass} className={classes.marginContainer}>
         <BoxWithSideImg
           img={ProductTerass}
           imgAlt="Terass"
@@ -108,6 +111,7 @@ const Products = ({ from }) => {
                 extra värmekälla kan uterummet användas fullt ut, året om.
               </Typography>
               <Typography variant="body1">
+                <br/>
                 Vi kan bygga både terasser, altanlösningar, uteplatser och stora
                 skjutpartier åt er. Vår terassinglasning bygger på ett
                 inglasningssystem utan vertikala profiler. Detta gör att det
@@ -115,6 +119,7 @@ const Products = ({ from }) => {
                 flerbostadshus.
               </Typography>
               <Typography variant="body1">
+                <br/>
                 Vi är helt säkra på att ni kommer bli riktigt nöjda med er nya
                 balkong. Därför vågar vi lova er hela 5 års garanti på material
                 och montage.
@@ -126,7 +131,7 @@ const Products = ({ from }) => {
           }
         />
       </Grid>
-      <Grid item xs={12} ref={tillbehör}>
+      <Grid item xs={12} ref={tillbehör} className={classes.marginContainer}>
         <BoxWithSideImg
           img={Carousel03}
           imgAlt="Solgardiner och persienner"
@@ -135,12 +140,14 @@ const Products = ({ from }) => {
             <>
               <Typography variant="body1">
                 Naturligtvis har vi även alla tillbehör ni behöver till er
-                inglasade balkong, terass eller skjutdörr. Vi kan även ta fram
+                inglasade balkong, terass eller skjutdörr. <br/>Vi kan även ta fram
                 lösningar som ligger helt utanför det "vanliga" om ni vill.
                 "Omöjligt" är ett ord vi aldrig använder.
+                <br/>
+                <br/>
+                Några exempel på vanliga tillbehör:
               </Typography>
               <Typography variant="body1">
-                Några exempel på vanliga tillbehör:
                 <ul>
                   <li>Plisségardiner - solskydd/insynsskydd</li>
                   <li>Persienner - solskydd/insynsskydd</li>

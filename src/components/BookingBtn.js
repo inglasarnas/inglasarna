@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "10px 0 0 10px",
     boxShadow: "0px 4px 4px 0 rgba(0,0,0,0.25)",
     textAlign: "left",
-    zIndex: "2000",
+    zIndex: "100",
   },
 }));
 

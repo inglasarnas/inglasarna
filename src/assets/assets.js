@@ -5,28 +5,199 @@ import carousel04 from './media/Carousel04.jpg';
 import carousel05 from './media/Carousel05.jpg';
 import productTerass from './media/ProductTerass.jpg';
 
+import Balcony01 from './media/Galleri Balkong/Balcony01.jpg';
+import Balcony02 from './media/Galleri Balkong/Balcony02.jpg';
+import Balcony03 from './media/Galleri Balkong/Balcony03.jpg';
+import Balcony04 from './media/Galleri Balkong/Balcony04.jpeg';
+import Balcony05 from './media/Galleri Balkong/Balcony05.jpg';
+import Balcony06 from './media/Galleri Balkong/Balcony06.jpg';
+import Balcony07 from './media/Galleri Balkong/Balcony07.jpg';
+import Balcony08 from './media/Galleri Balkong/Balcony08.jpg';
+import Balcony09 from './media/Galleri Balkong/Balcony09.jpg';
+import Balcony10 from './media/Galleri Balkong/Balcony10.jpg';
+import Balcony11 from './media/Galleri Balkong/Balcony11.jpg';
+import Balcony12 from './media/Galleri Balkong/Balcony12.jpg';
+import Balcony13 from './media/Galleri Balkong/Balcony13.jpg';
+import Balcony14 from './media/Galleri Balkong/Balcony14.jpg';
+import Balcony15 from './media/Galleri Balkong/Balcony15.jpg';
+import Balcony16 from './media/Galleri Balkong/Balcony16.jpg';
+import Balcony17 from './media/Galleri Balkong/Balcony17.jpg';
+import Balcony18 from './media/Galleri Balkong/Balcony18.jpg';
+import Balcony19 from './media/Galleri Balkong/Balcony19.jpg';
+import Balcony20 from './media/Galleri Balkong/Balcony20.jpg';
+import Balcony21 from './media/Galleri Balkong/Balcony21.jpg';
+import Balcony22 from './media/Galleri Balkong/Balcony22.jpg';
+import Balcony23 from './media/Galleri Balkong/Balcony23.jpg';
+import Balcony24 from './media/Galleri Balkong/Balcony24.jpg';
+import Balcony25 from './media/Galleri Balkong/Balcony25.jpg';
+import Balcony26 from './media/Galleri Balkong/Balcony26.jpeg';
+import Balcony27 from './media/Galleri Balkong/Balcony27.jpeg';
+import Balcony28 from './media/Galleri Balkong/Balcony28.jpeg';
+
 export const carouselImages = [
+  {
+    title: 'Solnedgång, inglasad balkong.',
+    image: carousel01
+  },
+  {
+    title: 'Lägenhetshus, inglasad balkong.',
+    image:carousel02
+  },
+  {
+    title: 'Inglasat rum, inglasad balkong.',
+    image: carousel03
+  },
+  {
+    title: 'Inglasning altan, sommar, utsikt över vatten.',
+    image: carousel04
+  },
+  {
+    title: 'Inglasning altan, vinter',
+    image:carousel05
+  },
+];
+
+export const fullBalconyGallery = [
+  {
+    img: Balcony01,
+    title: "Balkonginglasning"
+  },
+  {
+    img: Balcony02,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony03,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony04,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony05,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony06,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony07,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony08,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony09,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony10,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony11,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony12,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony13,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony14,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony15,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony16,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony17,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony18,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony19,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony20,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony21,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony22,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony23,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony24,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony25,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony26,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony27,
+    imgAlt: "Balkonginglasning"
+  },
+  {
+    img: Balcony28,
+    imgAlt: "Balkonginglasning"
+  },
+]
+
+  export const exampleBalconygallery = [
     {
-      title: 'Solnedgång, inglasad balkong.',
-      image: carousel01
+      img: Balcony01,
+      title: "Balkonginglasning"
     },
     {
-      title: 'Lägenhetshus, inglasad balkong.',
-      image:carousel02
+      img: Balcony06,
+      title: "Balkonginglasning"
     },
     {
-      title: 'Inglasat rum, inglasad balkong.',
-      image: carousel03
+      img: Balcony11,
+      title: "Balkonginglasning"
     },
     {
-      title: 'Inglasning altan, sommar, utsikt över vatten.',
-      image: carousel04
+      img: Balcony16,
+      title: "Balkonginglasning"
     },
     {
-      title: 'Inglasning altan, vinter',
-      image:carousel05
+      img: Balcony21,
+      title: "Balkonginglasning"
     },
-  ];
+    {
+      img: Balcony26,
+      title: "Balkonginglasning"
+    },
+  ]
 
   export const contactInfo = [
     {

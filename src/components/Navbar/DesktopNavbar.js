@@ -65,8 +65,12 @@ const DesktopNavbar = (props) => {
     setPricesAnchor(e.currentTarget);
   };
   const handlePricesClose = () => {
-    props.history.push("/prices");
+    setPricesAnchor(null);
   };
+  const handlePricesPush = (target) => {
+    setPricesAnchor(null);
+    props.history.push(target);
+  }
 
   const handleProductsClick = (e) => {
     setProductsAnchor(e.currentTarget);
@@ -163,19 +167,19 @@ const DesktopNavbar = (props) => {
         className={classes.dropdownMenu}
       >
         <MenuItem
-          onClick={() => handleProductsPush("/products")}
+          onClick={() => handlePricesPush("/prices/privat")}
           className={classes.dropdownLink}
         >
           Privat
         </MenuItem>
         <MenuItem
-          onClick={() => handleProductsPush("/products")}
+          onClick={() => handlePricesPush("/prices/brf")}
           className={classes.dropdownLink}
         >
           Brf & Företag
         </MenuItem>
         <MenuItem
-          onClick={() => handleProductsPush("/products")}
+          onClick={() => handlePricesPush("/prices/finance")}
           className={classes.dropdownLink}
         >
           Finansiering

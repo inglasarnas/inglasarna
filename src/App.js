@@ -39,6 +39,15 @@ function App(props) {
             <Route path="/prices">
               <Prices />
             </Route>
+            <Route path="/prices/privat">
+              <Prices from="privat" />
+            </Route>
+            <Route path="/prices/brf">
+              <Prices from="brf" />
+            </Route>
+            <Route path="/prices/finance">
+              <Prices from="finance" />
+            </Route>
             <Route path="/how">
               <How />
             </Route>

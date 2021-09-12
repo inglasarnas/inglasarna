@@ -136,16 +136,44 @@ const MobileNavbar = (props) => {
               
               </List>
               </ListItem>
+              <ListItem divider className={classes.nestedListContainer}>
             <ListItem
               button
               divider
-              onClick={() => props.history.push("/prices")}
               className={classes.listItem}
             >
               <Typography variant="h3" color="primary">
                 Kostnad
               </Typography>
-            </ListItem>
+            </ListItem >
+            <List className={classes.nestedList}>
+            <ListItem
+              button
+              onClick={() => props.history.push("/prices/privat")}
+            >
+              <Typography variant="h4" color="primary">
+                Privatperson
+              </Typography>
+              </ListItem>
+              <ListItem
+              button
+              onClick={() => props.history.push("/prices/brf")}
+            >
+              <Typography variant="h4" color="primary">
+                BRF & Företag
+              </Typography>
+              </ListItem>
+
+            <ListItem
+              button
+              onClick={() => props.history.push("/prices/finance")}
+            >
+              <Typography variant="h4" color="primary">
+                Finansiering
+              </Typography>
+              </ListItem>
+              </List>
+              </ListItem>
             <ListItem
               button
               divider
