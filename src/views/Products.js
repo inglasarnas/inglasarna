@@ -1,13 +1,12 @@
 import React, { useRef, useEffect } from "react";
 import RetailerInfoBox from "../components/RetailerInfoBox";
-import { Grid, Typography, makeStyles } from "@material-ui/core";
+import { Grid, Typography, makeStyles, } from "@material-ui/core";
 import BoxWithSideImg from "../components/BoxWithSideImg";
 import ProductTerass from "../assets/media/ProductTerass.jpg";
 import Carousel01 from "../assets/media/Carousel01.jpg";
 import Carousel03 from "../assets/media/Carousel03.jpg";
-import GridGallery from "../components/GridGallery";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   container: {
     display: "flex",
     flexFlow: "column",
@@ -22,6 +21,14 @@ const useStyles = makeStyles(() => ({
     marginBottom: "5vh",
     textAlign: "center",
   },
+  divider: {
+    backgroundColor: theme.palette.primary.main,
+    width: '100%',
+    height: '5px',
+    borderRadius: '30px',
+    margintop: theme.spacing(3),
+    marginBottom: theme.spacing(3)
+  }
 }));
 const Products = ({ from }) => {
   const balkong = useRef(null);
@@ -91,12 +98,13 @@ const Products = ({ from }) => {
                 balkong. Därför vågar vi lova er hela 5 års garanti på material
                 och montage.
               </Typography>
+              <br />
+                <br />
+              <Typography variant="body1">Se mer i vårat bildgalleri</Typography>
             </>
           }
         />
-      </Grid>
-      <Grid item xs={12} className={classes.marginContainer}>
-        <Typography variant="body1">Se mer i vårat bildgalleri</Typography>
+        <div className={classes.divider}></div>
       </Grid>
       <Grid item xs={12} ref={terass} className={classes.marginContainer}>
         <BoxWithSideImg
@@ -131,6 +139,7 @@ const Products = ({ from }) => {
           }
         />
       </Grid>
+      <div className={classes.divider}></div>
       <Grid item xs={12} ref={tillbehör} className={classes.marginContainer}>
         <BoxWithSideImg
           img={Carousel03}
@@ -162,6 +171,7 @@ const Products = ({ from }) => {
           }
         />
       </Grid>
+      <div className={classes.divider}></div>
       <Grid item xs={11}>
         <RetailerInfoBox />
       </Grid>

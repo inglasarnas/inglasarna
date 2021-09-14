@@ -45,7 +45,7 @@ const FinanceBox = () => {
 const classes = useStyles();
   return (
     <Grid container spacing={5} className={classes.container}>
-      <Grid item xs={10} className={classes.textContainer}>
+      <Grid item xs={12} md={10} className={classes.textContainer}>
         <Typography variant='h2' className={classes.margin}>Vi hjälper er med finansiering</Typography>
         <Typography variant='body1' className={classes.text}>
           Om du funderar på att ta ett lån för att kunna finansiera idén om balkonginglasning, så samarbetar Inglasarna med Wasa Kredit.

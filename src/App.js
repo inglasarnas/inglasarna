@@ -36,7 +36,7 @@ function App(props) {
             <Route path="/products/tillbehör">
               <Products from="tillbehör" />
             </Route>
-            <Route path="/prices">
+            <Route exact={true} path="/prices">
               <Prices />
             </Route>
             <Route path="/prices/privat">

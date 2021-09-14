@@ -3,7 +3,7 @@ import carousel02 from './media/Carousel02.jpg';
 import carousel03 from './media/Carousel03.jpg';
 import carousel04 from './media/Carousel04.jpg';
 import carousel05 from './media/Carousel05.jpg';
-import productTerass from './media/ProductTerass.jpg';
+// import productTerass from './media/ProductTerass.jpg';
 //BALKONG-GALLERI
 import Balcony01 from './media/galleriBalkong/Balcony01.jpg';
 import Balcony02 from './media/galleriBalkong/Balcony02.jpg';

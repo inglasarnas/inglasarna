@@ -236,7 +236,7 @@ const MobileNavbar = (props) => {
               <ListItem 
               button
               divider
-              onClick={() => props.history.push('/contact/privatperson')}
+              onClick={() => props.history.push('/contact/privat')}
               className={classes.listItem}
               >
                 <Typography variant="h3" color="primary">

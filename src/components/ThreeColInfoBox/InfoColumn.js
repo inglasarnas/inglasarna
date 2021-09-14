@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     textAlign: "center",
     minHeight: '15vw',
+    padding: theme.spacing(1),
   },
 }));
 

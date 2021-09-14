@@ -6,8 +6,13 @@ const useStyles = makeStyles((theme) => ({
   btn: {
     position: "fixed",
     top: "80%",
-    left: "calc(100vw - 230px)",
-    width: "220px",
+    left: "70%",
+    width: "30%",
+    "@media (min-width: 733px)": {
+      left: "calc(100% - 220px)",
+      top: "65%",
+    },
+    maxWidth: "220px",
     borderRadius: "10px 0 0 10px",
     boxShadow: "0px 4px 4px 0 rgba(0,0,0,0.25)",
     textAlign: "left",

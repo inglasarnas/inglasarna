@@ -1,8 +1,6 @@
 import React, {useRef, useEffect} from "react";
 import { Grid, makeStyles } from "@material-ui/core";
-import BoxWithSideImg from "../components/BoxWithSideImg";
 import FinanceBox from "../components/FinanceBox";
-import { fadedImgBoxes } from "../assets/assets";
 import { Typography } from "@material-ui/core";
 import CardWithBgImg from "../components/CardsWithBgImgs/CardWithBgImg";
 import Carousel03 from '../assets/media/Carousel03.jpg';
@@ -37,16 +35,16 @@ const Prices = (props) => {
   useEffect(() => {
     switch(props.from) {
       case "privat": 
-      privat.current.scrollIntoView({behavior: "smooth", block:"center"});
-      break;
+        privat.current.scrollIntoView({behavior: "smooth", block:"center"});
+        break;
       case "brf":
         brf.current.scrollIntoView({behavior: "smooth", block:"center"});
         break;
-        case "finance":
-          finance.current.scrollIntoView({behavior: "smooth", block:"center"});
-          break;
-          default:
-          break;
+      case "finance":
+        finance.current.scrollIntoView({behavior: "smooth", block:"center"});
+        break;
+      default:
+        break;
     }
   },[props.from]);
 

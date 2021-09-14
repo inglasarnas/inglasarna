@@ -30,15 +30,16 @@ columns: {
   },
   columnSize: {
     minHeight: 300,
+    "@media (max-width: 959px)": {
+      margin: theme.spacing(1),
+    },
   },
   columnsContainer: {
     display: "flex",
-    flexFlow: "row nowrap",
-    alignItems: "center",
-    justifyContent: "space-between",
-    width: "50vw",
+    justifyContent: "center",
     height: "100%",
     marginBottom: theme.spacing(4),
+    
   },
 }));
 const ThreeColInfoBox = () => {
@@ -53,10 +54,10 @@ const ThreeColInfoBox = () => {
       >
         <Typography variant="h2">Såhär går det till</Typography>
       </Grid>
-      <Grid item md={10} className={classes.columnsContainer}>
+      <Grid item container  md={10} className={classes.columnsContainer}>
         {threeColInfoBoxes.map((box) => {
           return (
-            <Grid item md={4} className={[classes.columns, classes.columnSize]} key={box.rubrik}>
+            <Grid item md={4} xs={11} className={[classes.columns, classes.columnSize]} key={box.rubrik}>
               <InfoColumn rubrik={box.rubrik} text1={box.text1} text2={box.text2}/>
             </Grid>
           );

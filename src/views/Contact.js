@@ -18,6 +18,9 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
     width: "40vw",
+    "@media (max-width: 700px)": {
+      width: "90vw",
+    },
   },
   marginBottom5: {
     marginBottom: "5vh",
@@ -43,7 +46,7 @@ const Contact = ({ from }) => {
   useEffect(() => {
     switch (from) {
       case "om":
-        omOss.current.scrollIntoView({ behavior: "smooth", block: "center" });
+        omOss.current.scrollIntoView({ behavior: "smooth", block: "start"}) ;
         break;
       case "brf":
         form.current.scrollIntoView({ behavior: "smooth", block: "center" });

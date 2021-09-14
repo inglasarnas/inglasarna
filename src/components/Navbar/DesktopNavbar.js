@@ -159,12 +159,14 @@ const DesktopNavbar = (props) => {
       </Grid>
       {/* KOSTNAD MENY*/}
       <Menu
+        disableScrollLock={true}
         id="pricesMenu"
         anchorEl={pricesAnchor}
         open={Boolean(pricesAnchor)}
         onClose={handlePricesClose}
         TransitionComponent={Fade}
         className={classes.dropdownMenu}
+        autoFocus={false}
       >
         <MenuItem
           onClick={() => handlePricesPush("/prices/privat")}
@@ -187,6 +189,7 @@ const DesktopNavbar = (props) => {
       </Menu>
       {/* PRODUKT-MENY */}
       <Menu
+        disableScrollLock={true}
         id="productsMenu"
         anchorEl={productsAnchor}
         open={Boolean(productsAnchor)}
@@ -215,6 +218,7 @@ const DesktopNavbar = (props) => {
       </Menu>
       {/* KONTAKT_MENY */}
       <Menu
+      disableScrollLock={true}
         id="kontaktMenu"
         anchorEl={kontaktAnchor}
         open={Boolean(kontaktAnchor)}
