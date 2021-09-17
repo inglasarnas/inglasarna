@@ -28,6 +28,9 @@ const useStyles = makeStyles((theme) => ({
       width: "100%",
       height: "auto",
     },
+    [theme.breakpoints.up("xl")]: {
+    width: "30vw",
+    },
   },
   textContainer: {
     marginTop: theme.spacing(4),

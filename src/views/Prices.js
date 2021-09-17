@@ -4,6 +4,8 @@ import FinanceBox from "../components/FinanceBox";
 import { Typography } from "@material-ui/core";
 import CardWithBgImg from "../components/CardsWithBgImgs/CardWithBgImg";
 import Carousel03 from '../assets/media/Carousel03.jpg';
+import Carousel05 from '../assets/media/Carousel05.jpg';
+
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -65,7 +67,7 @@ const Prices = (props) => {
               Varmt välkomna att kontakta oss idag, så bokar vi en tid för ett gratis hembesök!
             </Typography>
           }
-          backgroundImage={Carousel03}
+          backgroundImage={Carousel05}
         />
       </Grid>
       <Grid item xs={12} className={[classes.textContainer, classes.marginContainer]} ref={brf}>
