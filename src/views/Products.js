@@ -30,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
     height: '5px',
     borderRadius: '30px',
     margintop: theme.spacing(3),
-    marginBottom: theme.spacing(3),
     marginBottom: "5vw",
   }
 }));
