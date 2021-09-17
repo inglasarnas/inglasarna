@@ -2,14 +2,12 @@ import React, { useRef, useEffect } from "react";
 import RetailerInfoBox from "../components/RetailerInfoBox";
 import { Grid, Typography, makeStyles, } from "@material-ui/core";
 import BoxWithSideImg from "../components/BoxWithSideImg";
+import GridGallery from "../components/GridGallery";
 import ProductTerass from "../assets/media/ProductTerass.jpg";
 import Carousel01 from "../assets/media/Carousel01.jpg";
 import Carousel03 from "../assets/media/Carousel03.jpg";
-<<<<<<< Updated upstream
-=======
-import GridGallery from "../components/GridGallery";
-import { exampleBalconygallery } from "../assets/assets";
->>>>>>> Stashed changes
+import { exampleBalconyGallery, exampleTerassGallery, exampleTillbehorGallery } from "../assets/assets";
+
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -32,7 +30,8 @@ const useStyles = makeStyles((theme) => ({
     height: '5px',
     borderRadius: '30px',
     margintop: theme.spacing(3),
-    marginBottom: theme.spacing(3)
+    marginBottom: theme.spacing(3),
+    marginBottom: "5vw",
   }
 }));
 const Products = ({ from }) => {
@@ -103,20 +102,14 @@ const Products = ({ from }) => {
                 balkong. Därför vågar vi lova er hela 5 års garanti på material
                 och montage.
               </Typography>
-              <br />
-                <br />
-              <Typography variant="body1">Se mer i vårat bildgalleri</Typography>
             </>
           }
         />
-<<<<<<< Updated upstream
+        </Grid>
+        <Grid item xs={12} className={classes.marginContainer}>
+          <GridGallery title="Se fler balkonginglasningar i vårt galleri." images={exampleBalconyGallery} />
+        </Grid>
         <div className={classes.divider}></div>
-=======
-      </Grid>
-      <Grid item xs={12} className={classes.marginContainer}>
-        <GridGallery title="Se mer i vårat galleri" images={exampleBalconygallery} />
->>>>>>> Stashed changes
-      </Grid>
       <Grid item xs={12} ref={terass} className={classes.marginContainer}>
         <BoxWithSideImg
           img={ProductTerass}
@@ -142,14 +135,15 @@ const Products = ({ from }) => {
                 Vi är helt säkra på att ni kommer bli riktigt nöjda med er nya
                 balkong. Därför vågar vi lova er hela 5 års garanti på material
                 och montage.
-                <br />
-                <br />
-                Se mer i vårat bildgalleri:
               </Typography>
             </>
           }
         />
       </Grid>
+
+      <Grid item xs={12} className={classes.marginContainer}>
+          <GridGallery title="Se fler terassinglasningar i vårt galleri." images={exampleTerassGallery} />
+        </Grid>
       <div className={classes.divider}></div>
       <Grid item xs={12} ref={tillbehör} className={classes.marginContainer}>
         <BoxWithSideImg
@@ -175,13 +169,14 @@ const Products = ({ from }) => {
                   <li>Glashyllor - blomsterhyllor</li>
                 </ul>
               </Typography>
-              <Typography variant="body1">
-                Se mer i vårat bildgalleri:
-              </Typography>
             </>
           }
         />
       </Grid>
+
+      <Grid item xs={12} className={classes.marginContainer}>
+          <GridGallery title="Se fler tillbehör i vårt galleri." images={exampleTillbehorGallery} />
+        </Grid>
       <div className={classes.divider}></div>
       <Grid item xs={11}>
         <RetailerInfoBox />

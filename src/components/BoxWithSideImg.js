@@ -17,12 +17,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   image: {
-    height: 500,
-    width: 750,
+    height: "auto",
+    width: "40vw",
 
     float: "left",
     margin: theme.spacing(3),
-    borderRadius: theme.spacing(4),
 
     [theme.breakpoints.between("xs", "sm")]: {
       float: "none",
@@ -32,6 +31,11 @@ const useStyles = makeStyles((theme) => ({
   },
   textContainer: {
     marginTop: theme.spacing(4),
+    paddingLeft: "2vw",
+    display: "flex",
+    flexFlow: "column",
+    alignItems: "start",
+    justifyContent: "center",
   },
   heading: {
     marginBottom: theme.spacing(4),

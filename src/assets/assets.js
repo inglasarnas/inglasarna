@@ -216,7 +216,7 @@ export const fullBalconyGallery = [
 ]
 
 //small gallery for balcony, on product-page
-  export const exampleBalconygallery = [
+  export const exampleBalconyGallery = [
     {
       img: Balcony01,
       title: "Balkonginglasning"
