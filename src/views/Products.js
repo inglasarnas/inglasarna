@@ -6,7 +6,7 @@ import GridGallery from "../components/GridGallery";
 import ProductTerass from "../assets/media/ProductTerass.jpg";
 import Carousel01 from "../assets/media/Carousel01.jpg";
 import Carousel03 from "../assets/media/Carousel03.jpg";
-import { exampleBalconyGallery, exampleTerassGallery, exampleTillbehorGallery } from "../assets/assets";
+import { exampleBalconygallery, exampleTerassGallery, exampleTillbehorGallery } from "../assets/assets";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -107,7 +107,7 @@ const Products = ({ from }) => {
         />
         </Grid>
         <Grid item xs={12} className={classes.marginContainer}>
-          <GridGallery title="Se fler balkonginglasningar i vårt galleri." images={exampleBalconyGallery} />
+          <GridGallery title="Se fler balkonginglasningar i vårt galleri." images={exampleBalconygallery} />
         </Grid>
         <div className={classes.divider}></div>
       <Grid item xs={12} ref={terass} className={classes.marginContainer}>
