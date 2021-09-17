@@ -57,7 +57,7 @@ const GridGallery = (props) => {
             <img
               onClick={() => openLightBox(index)}
               className={classes.galleryImage}
-              src={image.image}
+              src={image.img}
               alt={image.title}
             />
           </GridListTile>
@@ -82,7 +82,7 @@ const GridGallery = (props) => {
           {carouselImages.map((image, index) => (
             <img
               className={classes.img}
-              src={image.image}
+              src={image.img}
               key={index}
               alt={image.title}
             />

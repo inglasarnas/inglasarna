@@ -5,6 +5,11 @@ import BoxWithSideImg from "../components/BoxWithSideImg";
 import ProductTerass from "../assets/media/ProductTerass.jpg";
 import Carousel01 from "../assets/media/Carousel01.jpg";
 import Carousel03 from "../assets/media/Carousel03.jpg";
+<<<<<<< Updated upstream
+=======
+import GridGallery from "../components/GridGallery";
+import { exampleBalconygallery } from "../assets/assets";
+>>>>>>> Stashed changes
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -69,7 +74,7 @@ const Products = ({ from }) => {
           oss!
         </Typography>
       </Grid>
-      <Grid item xs={12} ref={balkong}>
+      <Grid item xs={12} ref={balkong} className={classes.marginContainer}>
         <BoxWithSideImg
           img={Carousel01}
           imgAlt="Balkong"
@@ -104,7 +109,13 @@ const Products = ({ from }) => {
             </>
           }
         />
+<<<<<<< Updated upstream
         <div className={classes.divider}></div>
+=======
+      </Grid>
+      <Grid item xs={12} className={classes.marginContainer}>
+        <GridGallery title="Se mer i vårat galleri" images={exampleBalconygallery} />
+>>>>>>> Stashed changes
       </Grid>
       <Grid item xs={12} ref={terass} className={classes.marginContainer}>
         <BoxWithSideImg
