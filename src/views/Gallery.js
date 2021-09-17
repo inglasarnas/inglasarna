@@ -3,6 +3,7 @@ import GridGallery from "../components/GridGallery";
 import { carouselImages } from "../assets/assets";
 import { Grid, makeStyles } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
+import { fullBalconyGallery, fullTerassGallery, fullTillbehorGallery } from "../assets/assets";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -33,13 +34,13 @@ const Gallery = () => {
         </Typography>
       </Grid>
       <Grid item xs={12} className={classes.marginContainer}>
-        <GridGallery images={carouselImages} title="Balkonger" />
+        <GridGallery images={fullBalconyGallery} title="Balkonger" />
       </Grid>
       <Grid item xs={12} className={classes.marginContainer}>
-        <GridGallery images={carouselImages} title="Terasser" />
+        <GridGallery images={fullTerassGallery} title="Terasser" />
       </Grid>
       <Grid item xs={12} className={classes.marginContainer}>
-        <GridGallery images={carouselImages} title="Tillbehör" />
+        <GridGallery images={fullTillbehorGallery} title="Tillbehör" />
       </Grid>
     </Grid>
   );
