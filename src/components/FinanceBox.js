@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button, Grid, Typography, } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles'
-import background from '../assets/media/Finansbox.jpeg'
-import { Link } from 'react-router-dom';
+import background from '../assets/media/Finansbox.jpeg';
+
 const useStyles = makeStyles((theme) => ({
   container : {
     background: `url(${background})`,
@@ -54,7 +54,7 @@ const classes = useStyles();
           Tryck på knappen nedan för att beräkna din finansieringskostnad och läsa mer om finanseringen.
         </Typography>
         <img src="https://cdn.bytbilcms.com/uploads/sites/57/2020/03/wasa-kredit-logo.png" alt="wasa kredit logotyp" className={classes.wasaContainer}/>
-        <a href="https://wasakredit.se/direktlanet" target="_blank">
+        <a href="https://wasakredit.se/direktlanet" target="_blank" rel="norefferer">
         <Button variant='contained' color='primary' className={classes.margin}>
           Räkna på er finansiering
         </Button>
