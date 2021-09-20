@@ -70,6 +70,9 @@ const useStyles = makeStyles((theme) => ({
     width: '40vw'
   }
 },
+link : {
+  color: '#fff',
+}
 }));
 const Footer = () => {
   const classes = useStyles();
@@ -88,13 +91,13 @@ const Footer = () => {
           Vardagar 09:00-19:00
         </Typography>
         <Typography variant="subtitle1">
-<HiPhone/> +4673 502 3645
+<HiPhone/> <a href="tel:+46735023645" className={classes.link}>+4673 502 3645</a>
         </Typography>
         <Typography variant="subtitle1">
-<HiPhone/> +4676 337 6264
+<HiPhone/> <a href="tel:+46763376264" className={classes.link}>+4676 337 6264</a>
         </Typography>
         <Typography variant="subtitle1" className={classes.marginBottom}>
-<HiMail/> info@inglasarna.se
+<HiMail/> <a href="mailto:info@inglasarna.se" className={classes.link}>info@inglasarna.se</a>
         </Typography>
         <Typography variant="subtitle1">
           Org nr: 559307-0906

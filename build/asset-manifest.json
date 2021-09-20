@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.c6dbb702.chunk.js",
-    "main.js.map": "/static/js/main.c6dbb702.chunk.js.map",
+    "main.js": "/static/js/main.b574478a.chunk.js",
+    "main.js.map": "/static/js/main.b574478a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5a73189d.js",
     "runtime-main.js.map": "/static/js/runtime-main.5a73189d.js.map",
-    "static/js/2.2df5effb.chunk.js": "/static/js/2.2df5effb.chunk.js",
-    "static/js/2.2df5effb.chunk.js.map": "/static/js/2.2df5effb.chunk.js.map",
+    "static/js/2.6c095c29.chunk.js": "/static/js/2.6c095c29.chunk.js",
+    "static/js/2.6c095c29.chunk.js.map": "/static/js/2.6c095c29.chunk.js.map",
     "static/js/3.e7e86be3.chunk.js": "/static/js/3.e7e86be3.chunk.js",
     "static/js/3.e7e86be3.chunk.js.map": "/static/js/3.e7e86be3.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.2df5effb.chunk.js.LICENSE.txt": "/static/js/2.2df5effb.chunk.js.LICENSE.txt",
+    "static/js/2.6c095c29.chunk.js.LICENSE.txt": "/static/js/2.6c095c29.chunk.js.LICENSE.txt",
     "static/media/Balcony01.30e2c5e6.jpg": "/static/media/Balcony01.30e2c5e6.jpg",
     "static/media/Balcony02.b6e8f32d.jpg": "/static/media/Balcony02.b6e8f32d.jpg",
     "static/media/Balcony03.f06fc3da.jpg": "/static/media/Balcony03.f06fc3da.jpg",
@@ -91,7 +91,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.5a73189d.js",
-    "static/js/2.2df5effb.chunk.js",
-    "static/js/main.c6dbb702.chunk.js"
+    "static/js/2.6c095c29.chunk.js",
+    "static/js/main.b574478a.chunk.js"
   ]
 }

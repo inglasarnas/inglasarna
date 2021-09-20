@@ -3,7 +3,7 @@ import HowToStepper from "../components/HowToStepper";
 import GridGallery from "../components/GridGallery";
 import FormContainer from "../components/Form/FormContainer";
 import WhyGlass from '../components/WhyGlass';
-import { carouselImages } from "../assets/assets";
+import { exampleBalconygallery } from "../assets/assets";
 import { Grid, makeStyles } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
 
@@ -34,7 +34,7 @@ const How = () => {
 
 <Grid item xs={12} className={[classes.textContainer, classes.marginContainer]}>
         <Typography variant="h1" className={classes.title}>
-          Hur går det till?
+          Varför inglasning?
         </Typography>
         <Typography variant="body1">
           Om ni har fler frågor angående hur en inglasning går till, kontakta
@@ -48,7 +48,7 @@ const How = () => {
         <HowToStepper />
       </Grid>
       <Grid item xs={12} className={classes.marginContainer}>
-        <GridGallery images={carouselImages} title="Våra balkonginglasningar" />
+        <GridGallery images={exampleBalconygallery} title="Våra balkonginglasningar" />
       </Grid>
       <Grid item xs={12}>
         <FormContainer />

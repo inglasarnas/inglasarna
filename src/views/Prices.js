@@ -25,6 +25,12 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     marginBottom: "5vh",
   },
+  title : {
+    marginBottom: '1vh'
+  },
+  titleContainer: {
+    textAlign: 'center',
+  }
 }));
 
 const Prices = (props) => {
@@ -52,6 +58,15 @@ const Prices = (props) => {
 
   return (
     <Grid container className={classes.container}>
+      <Grid item xs={12} className={[classes.marginContainer, classes.titleContainer]}>
+              <Typography variant="h1" className={classes.title}>
+          Kostnad
+        </Typography>
+        <Typography variant="body1">
+          Om ni har fler frågor angående priser, kontakta
+          oss gärna!
+        </Typography>
+      </Grid>
       <Grid item xs={12} className={[classes.textContainer, classes.marginContainer]} ref={privat}>
         <CardWithBgImg
           title="Privatperson"
