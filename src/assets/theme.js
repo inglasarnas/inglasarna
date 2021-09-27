@@ -18,7 +18,7 @@ export const theme = createMuiTheme({
         },
     },
     typography: {
-        fontFamily: 'Spinnaker',
+        fontFamily: 'Montserrat',
         fontSize: '14pt',
     },
     spacing: 4,
