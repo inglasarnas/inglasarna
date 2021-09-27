@@ -26,7 +26,7 @@ const Gallery = () => {
     <Grid container className={classes.container}>
       <Grid item xs={12} className={[classes.textContainer, classes.marginContainer]}>
         <Typography variant="h1" className={classes.title}>
-          Galleri
+          <strong>Galleri</strong>
         </Typography>
         <Typography variant="body1">
           Om ni ser en lösning ni gillar, tveka inte att kontakta oss!

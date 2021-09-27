@@ -63,7 +63,7 @@ const Contact = ({ from }) => {
       <div className={classes.textContainer}>
         <Typography variant="h1" className={classes.title}>
           {" "}
-          Kontakta oss
+          <strong>Kontakta oss</strong>
         </Typography>
         <Typography variant="body1">
           Välkommen att kontakta oss för kostnadsfria hembesök eller om du vill

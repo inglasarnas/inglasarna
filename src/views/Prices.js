@@ -60,7 +60,7 @@ const Prices = (props) => {
     <Grid container className={classes.container}>
       <Grid item xs={12} className={[classes.marginContainer, classes.titleContainer]}>
               <Typography variant="h1" className={classes.title}>
-          Kostnad
+          <strong>Kostnad</strong>
         </Typography>
         <Typography variant="body1">
           Om ni har fler frågor angående priser, kontakta

@@ -34,7 +34,7 @@ const How = () => {
 
 <Grid item xs={12} className={[classes.textContainer, classes.marginContainer]}>
         <Typography variant="h1" className={classes.title}>
-          Varför inglasning?
+          <strong>Varför inglasning?</strong>
         </Typography>
         <Typography variant="body1">
           Om ni har fler frågor angående hur en inglasning går till, kontakta

@@ -66,7 +66,7 @@ const Products = ({ from }) => {
         xs={12}
         className={[classes.textContainer, classes.marginContainer]}
       >
-        <Typography variant="h1">Våra Produkter</Typography>
+        <Typography variant="h1"><strong>Våra Produkter</strong></Typography>
         <Typography variant="body1">
           Om ni har fler frågor angående våra produkter, välkomna att kontakta
           oss!
