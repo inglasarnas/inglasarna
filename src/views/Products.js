@@ -68,8 +68,7 @@ const Products = ({ from }) => {
       >
         <Typography variant="h1"><strong>Våra Produkter</strong></Typography>
         <Typography variant="body1">
-          Om ni har fler frågor angående våra produkter, välkomna att kontakta
-          oss!
+        Om ni har fler frågor angående våra produkter är ni välkomna att kontakta oss!
         </Typography>
       </Grid>
       <Grid item xs={12} ref={balkong} className={classes.marginContainer}>
@@ -91,7 +90,7 @@ const Products = ({ from }) => {
               <Typography variant="body1">
                 <ul>
                   <li>Ramfritt vik-in-system i fullhöjdsglas</li>
-                  <li>Skjutglas med ram - delat system</li>
+                  <li>Skjutglas med ram-delat system</li>
                   <li>Skjutglas med ram i fullhöjdsglas</li>
                   <li>Balkongtak i glas eller kanalplast</li>
                 </ul>
@@ -112,27 +111,27 @@ const Products = ({ from }) => {
       <Grid item xs={12} ref={terass} className={classes.marginContainer}>
         <BoxWithSideImg
           img={ProductTerass}
-          imgAlt="Terass"
-          title="Terass"
+          imgAlt="Terrass"
+          title="Terrass"
           text={
             <>
               <Typography variant="body1">
-                Med en inglasad terass eller altan får ni ytterligare ett
+                Med en inglasad terrass eller altan får ni ytterligare ett
                 trivsamt rum där ni kan vara nära naturen oavsett årstid. Med en
                 extra värmekälla kan uterummet användas fullt ut, året om.
               </Typography>
               <Typography variant="body1">
                 <br/>
-                Vi kan bygga både terasser, altanlösningar, uteplatser och stora
-                skjutpartier åt er. Vår terassinglasning bygger på ett
+                Vi kan bygga både terrasser, altanlösningar, uteplatser och stora
+                skjutpartier åt er. Vår terrassinglasning bygger på ett
                 inglasningssystem utan vertikala profiler. Detta gör att det
-                lämpar sig mycket väl för terasser och uterum i både villor och
+                lämpar sig mycket väl för terrasser och uterum i både villor och
                 flerbostadshus.
               </Typography>
               <Typography variant="body1">
                 <br/>
                 Vi är helt säkra på att ni kommer bli riktigt nöjda med er nya
-                balkong. Därför vågar vi lova er hela 5 års garanti på material
+                terrass. Därför vågar vi lova er hela 5 års garanti på material
                 och montage.
               </Typography>
             </>
@@ -141,7 +140,7 @@ const Products = ({ from }) => {
       </Grid>
 
       <Grid item xs={12} className={classes.marginContainer}>
-          <GridGallery title="Se fler terassinglasningar i vårt galleri." images={exampleTerassGallery} />
+          <GridGallery title="Se fler terrassinglasningar i vårt galleri." images={exampleTerassGallery} />
         </Grid>
       <div className={classes.divider}></div>
       <Grid item xs={12} ref={tillbehör} className={classes.marginContainer}>
@@ -153,8 +152,8 @@ const Products = ({ from }) => {
             <>
               <Typography variant="body1">
                 Naturligtvis har vi även alla tillbehör ni behöver till er
-                inglasade balkong, terass eller skjutdörr. <br/>Vi kan även ta fram
-                lösningar som ligger helt utanför det "vanliga" om ni vill.
+                inglasade balkong, terrass eller skjutdörr. <br/>
+                Vi kan även ta fram skräddarsydda lösningar på efterfrågan.
                 "Omöjligt" är ett ord vi aldrig använder.
                 <br/>
                 <br/>

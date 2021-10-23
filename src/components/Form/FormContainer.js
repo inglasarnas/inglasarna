@@ -100,7 +100,7 @@ const FormContainer = ({ from }) => {
         <Grid container className={classes.textContainer}>
           <Grid item xs={12} md={6} lg={6} className={classes.center}>
             <Typography className={classes.brfTitle} variant="h2">
-              Balkong inglasning för BRF
+              Balkonginglasning för BRF
             </Typography>
             <Typography variant="body1">
               Det finns många fördelar med att beställa balkonginglasning för er

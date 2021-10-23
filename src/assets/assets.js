@@ -466,12 +466,12 @@ export const exampleTillbehorGallery = [
     {
       rubrik: "Effektiva och professionella",
       text:
-        "Vi är effektiva och professionella i vårt arbete, vi har lång erfarenhet av att arbeta med ingladning. Vårat mål är att ni alltid ska känna er trygga med våra produkter och vår service.",
+        "Vi är effektiva och professionella i vårt arbete och har lång erfarenhet av att arbeta med inglasning. Vårt mål är att ni alltid ska känna er trygga med våra produkter och vår service.",
     },
     {
       rubrik: "Kreativa lösningar",
       text:
-        "Vi har lång erfarenhet av att arbeta med inglasningar, och vi hittar kreativa lösningar som är funktionella och lämpliga efter era önskemål.",
+        "Vi har lång erfarenhet av att arbeta med inglasningar och vi hittar kreativa lösningar som är funktionella och lämpliga efter era önskemål.",
     },
   ];
 
@@ -480,8 +480,8 @@ export const exampleTillbehorGallery = [
     {
       rubrik: "Vi planerar",
       text1:
-        "Vid vårt första kostnadsfria besök hos er diskuterar vi olika lösningar, mäter och sedan tar vi fram en offert. Vårat mål är att hitta just er perfekta lösning. Vi kommer även gå igenom olika finansieringslösningar.",
-      text2: "När ni bestämt er så kommer vi att hålla i hela processen, vi kommer sköta alla nödvändiga avtal och ta fram ett bygglov åt er."
+        "Vid vårt första kostnadsfria besök hos er diskuterar vi olika lösningar samt mäter för att sedan ta fram en offert. Vårt mål är att hitta just er perfekta lösning.",
+      text2: "När ni bestämt er så kommer vi att hålla i hela processen och kommer sköta alla nödvändiga avtal samt bistå er med uppgifter för en bygglovsansökan."
       },
     {
       rubrik: "Vi monterar",

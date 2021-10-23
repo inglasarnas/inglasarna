@@ -49,9 +49,8 @@ const classes = useStyles();
       <Grid item xs={12} md={10} className={classes.textContainer}>
         <Typography variant='h2' className={classes.margin}>Vi hjälper er med finansiering</Typography>
         <Typography variant='body1' className={classes.text}>
-          Om du funderar på att ta ett lån för att kunna finansiera idén om balkonginglasning, så samarbetar Inglasarna med Wasa Kredit.
-          Det finns möjlighet att låna mellan 10.000 till 250.000 kronor utan säkerhet. Givetvis har de några grundkrav.<br/><br/>
-          Tryck på knappen nedan för att beräkna din finansieringskostnad och läsa mer om finanseringen.
+        Ifall du funderar på att ta ett lån för att finansiera idén om balkonginglasning kan Wasa Kredit som vi samarbetar med hjälpa till. Det finns möjlighet att låna mellan 10.000 till 250.000 kronor utan säkerhet.<br/><br/>
+        Tryck på knappen nedan för att beräkna din finansieringskostnad och läsa mer om finansieringen.
         </Typography>
         <img src="https://cdn.bytbilcms.com/uploads/sites/57/2020/03/wasa-kredit-logo.png" alt="wasa kredit logotyp" className={classes.wasaContainer}/>
         <a href="https://wasakredit.se/direktlanet" rel="noreferrer noopener" target="_blank">

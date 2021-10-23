@@ -11,7 +11,7 @@ import {
 } from "@material-ui/core";
 import { withRouter, Link } from "react-router-dom";
 import { AiFillCaretDown } from "react-icons/ai";
-import Logo from "../../assets/media/logotyp.svg";
+import Logo from "../../assets/media/logo.png";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -207,7 +207,7 @@ const DesktopNavbar = (props) => {
           onClick={() => handleProductsPush("/products/terass")}
           className={classes.dropdownLink}
         >
-          Terass
+          Terrass
         </MenuItem>
         <MenuItem
           onClick={() => handleProductsPush("/products/tillbehör")}

@@ -13,7 +13,7 @@ import {
 import MenuIcon from "@material-ui/icons/Menu";
 import { withRouter, Link } from "react-router-dom";
 import { FiX } from "react-icons/fi";
-import Logo from "../../assets/media/responsiveLogo.svg";
+import Logo from "../../assets/media/logo_responsive.png";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     height: "7vh",
-    marginTop: theme.spacing(5),
+    marginTop: 12,
   },
   menuIcon: {
     fontSize: "5vh",
@@ -122,7 +122,7 @@ const MobileNavbar = (props) => {
               onClick={() => props.history.push("/products/terass")}
             >
               <Typography variant="h4" color="primary">
-                Terass
+                Terrass
               </Typography>
               </ListItem>
               <ListItem

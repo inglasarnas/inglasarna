@@ -31,12 +31,10 @@ const useStyles = makeStyles((theme) => ({
     "@media (max-width: 900px)": {
       height: 200,
       width: 200,
-      borderRadius: 100,
     },
     "@media (max-width: 600px)": {
-      height: 100,
-      width: 100,
-      borderRadius: 50,
+      height: 200,
+      width: 200,
     },
   },
   textContainer: {

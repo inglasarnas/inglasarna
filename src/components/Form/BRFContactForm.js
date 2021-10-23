@@ -24,7 +24,7 @@ const validationSchema = yup.object({
     .min(4, "Föreningens/Företagets namn bör innehålla minst 4 bokstäver.")
     .required("Du måste fylla i ett namn."),
   street: yup
-    .string("Ange föreningens/företagets address.")
+    .string("Ange föreningens/företagets adress.")
     .required("Du måste fylla i en gatuadress."),
   postalCode: yup
     .string("Ange föreningens/företagets postnummer.")
@@ -34,8 +34,8 @@ const validationSchema = yup.object({
     .string("Ange föreningens/företagets ort.")
     .required("Du måste ange en ort."),
   email: yup
-    .string("Ange en e-mail address")
-    .required("Du måste ange en e-mail address."),
+    .string("Ange en e-mail adress")
+    .required("Du måste ange en e-mail adress."),
   phoneNumber: yup
     .string("Ange ett telefonnummer.")
     .required("Du måste ange ett telefonnummer"),
@@ -180,7 +180,7 @@ const ContactForm = () => {
         </Grid>
 
         <Grid item xs={12}>
-          <Typography variant="body1">Adress Uppgifter:</Typography>
+          <Typography variant="body1">Adressuppgifter:</Typography>
         </Grid>
         <Grid item xs={12} lg={4} md={4}>
           <TextField
@@ -236,7 +236,7 @@ const ContactForm = () => {
         </Grid>
 
         <Grid item xs={12}>
-          <Typography variant="body1">Kontakt Uppgifter:</Typography>
+          <Typography variant="body1">Kontaktuppgifter:</Typography>
         </Grid>
         <Grid item xs={12} lg={4} md={4}>
           <TextField
@@ -297,7 +297,7 @@ const ContactForm = () => {
             error={formik.touched.byggLov && Boolean(formik.errors.byggLov)}
           >
             <FormLabel component="legend">
-              Finns bygglov for inglassning?
+              Finns bygglov for inglasning?
             </FormLabel>
             <RadioGroup
               id="byggLov"
@@ -371,7 +371,7 @@ const ContactForm = () => {
             rows={6}
             id="message"
             name="message"
-            label="Övriga upplysningar t.ex tidsplan (valfritt)"
+            label="Övriga upplysningar t.ex. tidsplan (valfritt)"
             type="text"
             value={formik.values.message}
             onChange={formik.handleChange}
@@ -403,7 +403,7 @@ const ContactForm = () => {
               <ErrorOutlineIcon className={classes.errorIcon} />
               <Typography variant="body1">
                 Det blev något fel, Testa att skicka ditt meddelande direkt till
-                mailaddressen ovan.
+                mailadressen ovan.
               </Typography>
             </>
           ) : (

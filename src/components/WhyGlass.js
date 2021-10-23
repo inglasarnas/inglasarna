@@ -57,7 +57,7 @@ const WhyGlass = () => {
                     <li>En inglasning håller ute vind, regn och snö.</li>
                     <li>Stänger ute ljud och buller med ca 50%.</li>
                     <li>Ger effektivt skydd mot damm och pollen.</li>
-                    <li>Minskar slitage på balkong eller terass.</li>
+                    <li>Minskar slitage på balkong eller terrass.</li>
                     <br/>
                 </ul>
             </Typography>
@@ -102,9 +102,9 @@ const WhyGlass = () => {
         </Grid>
         <Grid item xs={10} className={[classes.box, classes.box1, classes.box2]}>
             <Typography variant="body1">
-    Det finns ett stort antal fördelar med att glasa in din balkong eller terass. 
+    Det finns ett stort antal fördelar med att glasa in din balkong eller terrass. 
     Våra inglasningar från Lumon höjer boendekomforten och ger extra utrymme till ditt hem.
-    Balkongen eller terassen kan användas året om, oberoende av årstid och blir på så sätt mer användbar.
+    Balkongen eller terrassen kan användas året om, oberoende av årstid och blir på så sätt mer användbar.
     Inglasningen skyddar mot regn, snö, vind, avgaser och damm och dämpar dessutom buller.
     Med vår inglasning ökar säkerheten för ditt barn och dina husdjur samt minskar risken för inbrott och sparar energi.
     Inglasningen gör således att ni får ett bättre pris för ert hem vid försäljning eller byte.<br/>

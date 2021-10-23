@@ -32,8 +32,8 @@ const RetailerInfoBox = () => {
       </Grid>
       <Grid item md={8} xs={12} className={classes.textContainer}>
         <Typography variant="body1">
-          Lumon är ett av de främsta företagen på den europeiska balkong- och terassmarknaden, och är specialiserade på konstruktioner i glas och aluminium samt hållbarhet.
-          De har ett brett sortiment med allt från balkongglas till glasterrasser, avgränsare och lösningar för olika balkong- och terassfasader.<br/>
+          Lumon är ett av de främsta företagen på den europeiska balkong- och terrassmarknaden, och är specialiserade på konstruktioner i glas och aluminium samt hållbarhet.
+          De har ett brett sortiment med allt från balkongglas till glasterrasser, avgränsare och lösningar för olika balkong- och terrassfasader.<br/>
           Form, funktion och service håller alltid absolut högsta standard.
         </Typography>
         <Typography variant="body1">

@@ -29,14 +29,14 @@ const Gallery = () => {
           <strong>Galleri</strong>
         </Typography>
         <Typography variant="body1">
-          Om ni ser en lösning ni gillar, tveka inte att kontakta oss!
+        Tveka inte att kontakta oss om ni ser en lösning ni gillar.
         </Typography>
       </Grid>
       <Grid item xs={12} className={classes.marginContainer}>
         <GridGallery images={fullBalconyGallery} title="Balkonger" />
       </Grid>
       <Grid item xs={12} className={classes.marginContainer}>
-        <GridGallery images={fullTerassGallery} title="Terasser" />
+        <GridGallery images={fullTerassGallery} title="Terrasser" />
       </Grid>
       <Grid item xs={12} className={classes.marginContainer}>
         <GridGallery images={fullTillbehorGallery} title="Tillbehör" />

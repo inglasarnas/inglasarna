@@ -63,8 +63,7 @@ const Prices = (props) => {
           <strong>Kostnad</strong>
         </Typography>
         <Typography variant="body1">
-          Om ni har fler frågor angående priser, kontakta
-          oss gärna!
+        Kontakta oss gärna om ni har fler frågor angående pris!
         </Typography>
       </Grid>
       <Grid item xs={12} className={[classes.textContainer, classes.marginContainer]} ref={privat}>
@@ -74,12 +73,11 @@ const Prices = (props) => {
             <Typography variant="body1">
               Priset på en inglasad balkong beror på flera olika faktorer. 
               Inglasningens form, mått, monteringssätt, typ av glas och isolering samt tekniska krav är saker som styr slutpriset.
-              Vi börjar med att komma till er och gör en undersökning, detta är helt kostnadsfritt.
+              Vi börjar med att komma till er och gör en undersökning vilket är helt kostnadsfritt.
               Vi tar alltid fram en individuellt anpassad offert när vi ska utföra en inglasning.
-              Vi måste se över de olika faktorerna som påverkar och ta de olika mått som behövs innan vi kan presentera ett förslag
-              på inglasning för er, samt en planerings- och kostnadskalkyl.
+              Vi måste se över de olika faktorerna som påverkar och ta de olika mått som behövs innan vi kan presentera ett förslag på inglasning för er samt en planerings- och kostnadskalkyl.
               Väljer ni oss som leverantör så väljer ni även patenterade produkter med säkerhetsglas och generösa garantier på både material och montering.
-              Varmt välkomna att kontakta oss idag, så bokar vi en tid för ett gratis hembesök!
+              Varmt välkomna att kontakta oss idag så bokar vi en tid för ett gratis hembesök!
             </Typography>
           }
           backgroundImage={Carousel05}
@@ -91,10 +89,10 @@ const Prices = (props) => {
           text={
             <Typography variant="body1">
               Hur mycket en inglasning kostar för en bostadsrättsförening eller för ett företag beror alltid på er fastighets förutsättningar.
-              Det är flera faktorer som spelar in - hur stor inglasningen ska vara, vilken modell av inglasning ni väljer samt tillval som solskydd, infattning och typ av glas.
+              Det är flera faktorer som spelar in: hur stor inglasningen ska vara, vilken modell av inglasning ni väljer samt tillval som solskydd, infattning och typ av glas.
               Vi börjar alltid med att komma till er för att göra en undersökning, detta är helt kostnadsfritt.
-              Är ni fler i en bostadsrättsförening eller i ett företag som har önskemål om att glasa in balkong eller terass kan detta vara värt att ta upp med styrelsen i er bostadsrättsförening.
-              Kan vi utföra inglasning av flera balkonger eller terasser samtidigt blir priset naturligtvis bättre, då vi kan minska antalet transporter och optimera processen.
+              Är ni fler i en bostadsrättsförening eller i ett företag som har önskemål om att glasa in balkong eller terrass kan detta vara värt att ta upp med styrelsen i er bostadsrättsförening.
+              Ifall flera balkonger eller terrasser samtidigt kan bli inglasade blir priset bättre eftersom vi kan minska antalet transporter och optimera processen. Vi kommer därför först till er för att undersöka era specifika villkor samt tar fram mått. Därefter kan vi presentera att förslag på inglasning samt ge er en planerings- och kostnadskalkyl.
               Vi kommer därför först till er för att undersöka era specifika villkor samt tar fram mått.
               Först därefter kan vi presentera att förslag på inglasning för er samt ge er en planerings- och kostnadskalkyl.
             </Typography>

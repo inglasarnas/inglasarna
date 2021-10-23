@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.c3d7eaa2.chunk.js",
-    "main.js.map": "/static/js/main.c3d7eaa2.chunk.js.map",
+    "main.js": "/static/js/main.4877abf9.chunk.js",
+    "main.js.map": "/static/js/main.4877abf9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5a73189d.js",
     "runtime-main.js.map": "/static/js/runtime-main.5a73189d.js.map",
     "static/js/2.1c527c56.chunk.js": "/static/js/2.1c527c56.chunk.js",
@@ -78,8 +78,7 @@
     "static/media/Terass29.e73e87e4.jpg": "/static/media/Terass29.e73e87e4.jpg",
     "static/media/Terass30.57d0b0e8.jpg": "/static/media/Terass30.57d0b0e8.jpg",
     "static/media/Terass31.9cf0834c.jpg": "/static/media/Terass31.9cf0834c.jpg",
-    "static/media/logotyp.be159f2d.svg": "/static/media/logotyp.be159f2d.svg",
-    "static/media/responsiveLogo.bffec917.svg": "/static/media/responsiveLogo.bffec917.svg",
+    "static/media/logo.12e84cb7.png": "/static/media/logo.12e84cb7.png",
     "static/media/tillbehor01.6e817b5a.jpeg": "/static/media/tillbehor01.6e817b5a.jpeg",
     "static/media/tillbehor02.1601a3ee.jpeg": "/static/media/tillbehor02.1601a3ee.jpeg",
     "static/media/tillbehor03.6364291c.jpg": "/static/media/tillbehor03.6364291c.jpg",
@@ -92,6 +91,6 @@
   "entrypoints": [
     "static/js/runtime-main.5a73189d.js",
     "static/js/2.1c527c56.chunk.js",
-    "static/js/main.c3d7eaa2.chunk.js"
+    "static/js/main.4877abf9.chunk.js"
   ]
 }

@@ -3,7 +3,7 @@ import ContactBox from "../components/ContactBoxes/ContactBox";
 import FormContainer from "../components/Form/FormContainer";
 import { Typography, makeStyles } from "@material-ui/core";
 import { useEffect, useRef } from "react";
-import logo from "../assets/media/logotyp.svg";
+import logo from "../assets/media/logo.png";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -66,10 +66,7 @@ const Contact = ({ from }) => {
           <strong>Kontakta oss</strong>
         </Typography>
         <Typography variant="body1">
-          Välkommen att kontakta oss för kostnadsfria hembesök eller om du vill
-          veta mer om våra produkter och system vi arbetar med. Du når oss på
-          antingen e-post, via telefon eller så kan du använda dig av
-          kontaktformuläret här nertill.
+        Välkommen att kontakta oss för kostnadsfria hembesök eller för att veta mer, vare sig det gäller våra produkter eller system. Du når oss på via E-post, telefon eller genom att fylla i kontaktformuläret nedan.
         </Typography>
       </div>
       <div className={classes.marginBottom5} />
@@ -90,10 +87,7 @@ const Contact = ({ from }) => {
         <Typography variant="body1" className={classes.marginBottom1}>
           Grundarna av Inglasarna har över 13 års erfarenhet av Lumons
           inglasning, såväl för privatperson som bostadsrättsföreningar. Vi
-          arbetar lokalt i Linköping och Norrköping med omnejd. Det gör att vi
-          känner till villkoren för inglasning väldigt bra för området och har
-          nära till våra kunder, varesig det rör sig om en ny inglasning eller
-          service av en befintlig sådan.
+          arbetar lokalt i Linköping och Norrköping med omnejd. Det gör att vi känner till villkoren för inglasning väl för området och har nära till våra kunder oavsett vad det rör sig om.
         </Typography>
         <Typography variant="h3" className={classes.marginBottom1}>
           Vi är säkra på kvaliteten i vårat arbete och ger dig därför 5 års
@@ -114,11 +108,7 @@ const Contact = ({ from }) => {
         </Typography>
         <Typography variant="body1">
           Vi vill kunna garantera er att kvaliteten blir den bästa som ni kan
-          hitta på marknaden. Så vi kommer att hjälpa er från planering till
-          bygglov, från finansiering till leverans och montage. Det är därför vi
-          också vågar ge dig en garanti på 5 år, på både installation och
-          material. Är ni intresserad så kontakta oss, så gör vi ett
-          kostnadsfritt besök hos er!
+          hitta på marknaden. Vi kommer att hjälpa er från planering till bygglov och från finansiering till leverans och montage. Det är därför vi också vågar ge dig en garanti på 5 år på både installation och material. Är ni intresserade så kontakta oss så gör vi ett kostnadsfritt besök hos er!
         </Typography>
       </div>
     </div>
