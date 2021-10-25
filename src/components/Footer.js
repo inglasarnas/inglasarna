@@ -82,13 +82,16 @@ const Footer = () => {
         <Typography variant="body1" className={classes.marginBottom}>INGLASARNA AB</Typography>
         <div>
         <Typography variant="subtitle1">
-          Idegatan 14
+          Idögatan 14
         </Typography>
         <Typography variant="subtitle1" className={classes.marginBottom}>
           582 78 LINKÖPING
         </Typography>
         <Typography variant="subtitle1" className={classes.marginBottom}>
           Vardagar 09:00-19:00
+        </Typography>
+        <Typography variant="subtitle1">
+          <strong>Försäljning/Kundservice</strong>
         </Typography>
         <Typography variant="subtitle1">
 <HiPhone/> <a href="tel:+46735023645" className={classes.link}>+4673 502 3645</a>
@@ -98,6 +101,12 @@ const Footer = () => {
         </Typography>
         <Typography variant="subtitle1" className={classes.marginBottom}>
 <HiMail/> <a href="mailto:info@inglasarna.se" className={classes.link}>info@inglasarna.se</a>
+        </Typography>
+        <Typography variant="subtitle1">
+          <strong>Montage</strong>
+        </Typography>
+        <Typography variant="subtitle1" className={classes.marginBottom}>
+<HiPhone/> <a href="tel:+46763374322" className={classes.link}>+4676 337 4322</a>
         </Typography>
         <Typography variant="subtitle1">
           Org nr: 559307-0906
