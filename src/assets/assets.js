@@ -103,14 +103,17 @@ export const carouselImages = [
 export const fullBalconyGallery = [
   {
     img: Balcony01,
+    imgLink: "https://brandtori-sso.contenthub.fi/NiboWEB/lumon/getFile.do?type=preview&versioId=1573721414000&uuid=7915282",
     title: "Balkonginglasning"
   },
   {
     img: Balcony02,
+    imgLink: "https://brandtori-sso.contenthub.fi/NiboWEB/lumon/getFile.do?type=preview&versioId=1573721439000&uuid=7915307",
     title: "Balkonginglasning"
   },
   {
     img: Balcony03,
+    imgLink: "https://brandtori-sso.contenthub.fi/NiboWEB/lumon/getFile.do?type=preview&versioId=1573721473000&uuid=7915331",
     title: "Balkonginglasning"
   },
   {
@@ -219,6 +222,7 @@ export const fullBalconyGallery = [
   export const exampleBalconygallery = [
     {
       img: Balcony01,
+      imgLink: "https://brandtori-sso.contenthub.fi/NiboWEB/lumon/getFile.do?type=preview&versioId=1573721414000&uuid=7915282",
       title: "Balkonginglasning"
     },
     {

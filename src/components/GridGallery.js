@@ -6,11 +6,8 @@ import {
   GridList,
   GridListTile,
   Typography,
-
 } from "@material-ui/core";
 import Carousel from "react-material-ui-carousel";
-import { carouselImages } from "../assets/assets";
-
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -76,10 +73,9 @@ const GridGallery = (props) => {
           className={classes.carousel}
           autoPlay={false}
           navButtonsAlwaysVisible
-          animation="fade"
           cycleNavigation={false}
         >
-          {carouselImages.map((image, index) => (
+          {props.images.map((image, index) => (
             <img
               className={classes.img}
               src={image.img}
