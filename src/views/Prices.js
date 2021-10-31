@@ -73,7 +73,7 @@ const Prices = (props) => {
             <Typography variant="body1">
               Priset på en inglasad balkong beror på flera olika faktorer. 
               Inglasningens form, mått, monteringssätt, typ av glas och isolering samt tekniska krav är saker som styr slutpriset.
-              Vi börjar med att komma till er och gör en undersökning vilket är helt kostnadsfritt.
+              Vi börjar med att komma till er och gör en konsultation vilket är helt kostnadsfritt.
               Vi tar alltid fram en individuellt anpassad offert när vi ska utföra en inglasning.
               Vi måste se över de olika faktorerna som påverkar och ta de olika mått som behövs innan vi kan presentera ett förslag på inglasning för er samt en planerings- och kostnadskalkyl.
               Väljer ni oss som leverantör så väljer ni även patenterade produkter med säkerhetsglas och generösa garantier på både material och montering.

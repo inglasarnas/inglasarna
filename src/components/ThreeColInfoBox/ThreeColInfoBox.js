@@ -3,7 +3,6 @@ import { Grid, makeStyles, Typography } from "@material-ui/core";
 import {Parallax} from 'react-parallax';
 import InfoColumn from "./InfoColumn";
 import {threeColInfoBoxes} from '../../assets/assets';
-import background from '../../assets/media/Carousel03.jpg';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -45,7 +44,7 @@ columns: {
 const ThreeColInfoBox = () => {
   const classes = useStyles();
   return (
-    <Parallax bgImage={background} strength={-200}>
+    <Parallax bgImage={'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667060/Balkong/Balcony14_uoxqpi.jpg'} strength={-200}>
     <Grid container spacing={3} className={classes.container}>
       <Grid
         item

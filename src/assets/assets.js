@@ -1,219 +1,146 @@
-import carousel01 from './media/Carousel01.jpg';
-import carousel02 from './media/Carousel02.jpg';
-import carousel03 from './media/Carousel03.jpg';
-import carousel04 from './media/Carousel04.jpg';
-import carousel05 from './media/Carousel05.jpg';
-// import productTerass from './media/ProductTerass.jpg';
-//BALKONG-GALLERI
-import Balcony01 from './media/galleriBalkong/Balcony01.jpg';
-import Balcony02 from './media/galleriBalkong/Balcony02.jpg';
-import Balcony03 from './media/galleriBalkong/Balcony03.jpg';
-import Balcony04 from './media/galleriBalkong/Balcony04.jpeg';
-import Balcony05 from './media/galleriBalkong/Balcony05.jpg';
-import Balcony06 from './media/galleriBalkong/Balcony06.jpg';
-import Balcony07 from './media/galleriBalkong/Balcony07.jpg';
-import Balcony08 from './media/galleriBalkong/Balcony08.jpg';
-import Balcony09 from './media/galleriBalkong/Balcony09.jpg';
-import Balcony10 from './media/galleriBalkong/Balcony10.jpg';
-import Balcony11 from './media/galleriBalkong/Balcony11.jpg';
-import Balcony12 from './media/galleriBalkong/Balcony12.jpg';
-import Balcony13 from './media/galleriBalkong/Balcony13.jpg';
-import Balcony14 from './media/galleriBalkong/Balcony14.jpg';
-import Balcony15 from './media/galleriBalkong/Balcony15.jpg';
-import Balcony16 from './media/galleriBalkong/Balcony16.jpg';
-import Balcony17 from './media/galleriBalkong/Balcony17.jpg';
-import Balcony18 from './media/galleriBalkong/Balcony18.jpg';
-import Balcony19 from './media/galleriBalkong/Balcony19.jpg';
-import Balcony20 from './media/galleriBalkong/Balcony20.jpg';
-import Balcony21 from './media/galleriBalkong/Balcony21.jpg';
-import Balcony22 from './media/galleriBalkong/Balcony22.jpg';
-import Balcony23 from './media/galleriBalkong/Balcony23.jpg';
-import Balcony24 from './media/galleriBalkong/Balcony24.jpg';
-import Balcony25 from './media/galleriBalkong/Balcony25.jpg';
-import Balcony26 from './media/galleriBalkong/Balcony26.jpeg';
-import Balcony27 from './media/galleriBalkong/Balcony27.jpeg';
-import Balcony28 from './media/galleriBalkong/Balcony28.jpeg';
-//TERASSGALLERI
-import Terass01 from './media/galleriTerass/Terass01.jpg';
-import Terass02 from './media/galleriTerass/Terass02.jpg';
-import Terass03 from './media/galleriTerass/Terass03.jpg';
-import Terass04 from './media/galleriTerass/Terass04.jpg';
-import Terass05 from './media/galleriTerass/Terass05.jpg';
-import Terass06 from './media/galleriTerass/Terass06.jpg';
-import Terass07 from './media/galleriTerass/Terass07.jpg';
-import Terass08 from './media/galleriTerass/Terass08.jpg';
-import Terass09 from './media/galleriTerass/Terass09.jpg';
-import Terass10 from './media/galleriTerass/Terass10.jpg';
-import Terass11 from './media/galleriTerass/Terass11.jpg';
-import Terass12 from './media/galleriTerass/Terass12.jpg';
-import Terass13 from './media/galleriTerass/Terass13.jpg';
-import Terass14 from './media/galleriTerass/Terass14.jpg';
-import Terass15 from './media/galleriTerass/Terass15.jpg';
-import Terass16 from './media/galleriTerass/Terass16.jpg';
-import Terass17 from './media/galleriTerass/Terass17.jpg';
-import Terass18 from './media/galleriTerass/Terass18.jpg';
-import Terass19 from './media/galleriTerass/Terass19.jpg';
-import Terass20 from './media/galleriTerass/Terass20.jpg';
-import Terass21 from './media/galleriTerass/Terass21.jpg';
-import Terass22 from './media/galleriTerass/Terass22.jpg';
-import Terass23 from './media/galleriTerass/Terass23.jpg';
-import Terass24 from './media/galleriTerass/Terass24.jpg';
-import Terass25 from './media/galleriTerass/Terass25.jpg';
-import Terass26 from './media/galleriTerass/Terass26.jpg';
-import Terass27 from './media/galleriTerass/Terass27.jpg';
-import Terass28 from './media/galleriTerass/Terass28.jpg';
-import Terass29 from './media/galleriTerass/Terass29.jpg';
-import Terass30 from './media/galleriTerass/Terass30.jpg';
-import Terass31 from './media/galleriTerass/Terass31.jpg';
-//TILLBEHORGALLERI
-import Tillbehor01 from './media/galleriTillbehor/tillbehor01.jpeg';
-import Tillbehor02 from './media/galleriTillbehor/tillbehor02.jpeg';
-import Tillbehor03 from './media/galleriTillbehor/tillbehor03.jpg';
-import Tillbehor04 from './media/galleriTillbehor/tillbehor04.jpg';
-import Tillbehor05 from './media/galleriTillbehor/tillbehor05.jpg';
-import Tillbehor06 from './media/galleriTillbehor/tillbehor06.jpg';
-import Tillbehor07 from './media/galleriTillbehor/tillbehor07.jpeg'; 
-import Tillbehor08 from './media/galleriTillbehor/tillbehor08.jpg';
-
 //start carousel
 export const carouselImages = [
   {
     title: 'Solnedgång, inglasad balkong.',
-    image: carousel01
+    image: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667060/Balkong/Balcony02_qoehma.jpg'
+  },
+  {
+    title: 'Inglasning altan, sommar',
+    image: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667028/Terrass/Terass29_jr0nhb.jpg'
   },
   {
     title: 'Lägenhetshus, inglasad balkong.',
-    image:carousel02
+    image:'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667062/Balkong/Balcony11_ybu7pp.jpg'
   },
   {
-    title: 'Inglasat rum, inglasad balkong.',
-    image: carousel03
+    title: 'Inglasning altan, skog i bakgrunden',
+    image: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667027/Terrass/Terass28_c19rqn.jpg'
   },
   {
-    title: 'Inglasning altan, sommar, utsikt över vatten.',
-    image: carousel04
+    title: 'Inglasat rum, inglasad balkong, juldekorationer.',
+    image: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667063/Balkong/Balcony22_i8yic4.jpg'
   },
   {
     title: 'Inglasning altan, vinter',
-    image:carousel05
-  },
+    image:'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667028/Terrass/Terass13_xlyfvi.jpg'
+  }
 ];
 
 //full gallery for balcony
 export const fullBalconyGallery = [
   {
-    img: Balcony01,
-    imgLink: "https://brandtori-sso.contenthub.fi/NiboWEB/lumon/getFile.do?type=preview&versioId=1573721414000&uuid=7915282",
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667064/Balkong/Balcony09_nj6drx.jpg',
+    imgLink: "https://res.cloudinary.com/josephinehpersson/image/upload/v1635667064/Balkong/Balcony09_nj6drx.jpg",
     title: "Balkonginglasning"
   },
   {
-    img: Balcony02,
-    imgLink: "https://brandtori-sso.contenthub.fi/NiboWEB/lumon/getFile.do?type=preview&versioId=1573721439000&uuid=7915307",
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667064/Balkong/Balcony21_qxtokm.jpg',
+    imgLink: "https://res.cloudinary.com/josephinehpersson/image/upload/v1635667064/Balkong/Balcony21_qxtokm.jpg",
     title: "Balkonginglasning"
   },
   {
-    img: Balcony03,
-    imgLink: "https://brandtori-sso.contenthub.fi/NiboWEB/lumon/getFile.do?type=preview&versioId=1573721473000&uuid=7915331",
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667063/Balkong/Balcony15_yktwzi.jpg',
+    imgLink: "https://res.cloudinary.com/josephinehpersson/image/upload/v1635667063/Balkong/Balcony15_yktwzi.jpg",
     title: "Balkonginglasning"
   },
   {
-    img: Balcony04,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667063/Balkong/Balcony22_i8yic4.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony05,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667063/Balkong/Balcony06_kl4nf6.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony06,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667063/Balkong/Balcony20_ehlby1.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony07,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667063/Balkong/Balcony19_cvvy2o.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony08,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667062/Balkong/Balcony17_smzixy.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony09,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667062/Balkong/Balcony10_yqurvn.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony10,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667062/Balkong/Balcony11_ybu7pp.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony11,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667062/Balkong/Balcony13_sjvb9c.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony12,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667062/Balkong/Balcony03_tq4qvk.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony13,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667062/Balkong/Balcony07_nt31ik.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony14,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667062/Balkong/Balcony24_ennbat.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony15,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667061/Balkong/Balcony16_zqgpai.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony16,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667061/Balkong/Balcony25_mqddnc.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony17,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667060/Balkong/Balcony02_qoehma.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony18,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667060/Balkong/Balcony14_uoxqpi.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony19,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667060/Balkong/Balcony23_jxkhtt.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony20,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667060/Balkong/Balcony01_sdebko.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony21,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667060/Balkong/Balcony08_qnnz81.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony22,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667060/Balkong/Balcony12_qibvmq.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony23,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667059/Balkong/Balcony18_fwgrqd.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony24,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667059/Balkong/Balcony05_oexnea.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony25,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667059/Balkong/Balcony26_nxewm0.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony26,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667059/Balkong/Balcony27_lmhuws.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony27,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667059/Balkong/Balcony28_zvhkqo.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: Balcony28,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667059/Balkong/Balcony04_s9yhax.jpg',
     title: "Balkonginglasning"
   },
 ]
@@ -221,156 +148,158 @@ export const fullBalconyGallery = [
 //small gallery for balcony, on product-page
   export const exampleBalconygallery = [
     {
-      img: Balcony01,
-      imgLink: "https://brandtori-sso.contenthub.fi/NiboWEB/lumon/getFile.do?type=preview&versioId=1573721414000&uuid=7915282",
+      img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667064/Balkong/Balcony09_nj6drx.jpg',
+      imgLink: "https://res.cloudinary.com/josephinehpersson/image/upload/v1635667064/Balkong/Balcony09_nj6drx.jpg",
       title: "Balkonginglasning"
     },
     {
-      img: Balcony06,
+      img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667064/Balkong/Balcony21_qxtokm.jpg',
+      imgLink: "https://res.cloudinary.com/josephinehpersson/image/upload/v1635667064/Balkong/Balcony21_qxtokm.jpg",
       title: "Balkonginglasning"
     },
     {
-      img: Balcony11,
+      img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667063/Balkong/Balcony15_yktwzi.jpg',
+      imgLink: "https://res.cloudinary.com/josephinehpersson/image/upload/v1635667063/Balkong/Balcony15_yktwzi.jpg",
       title: "Balkonginglasning"
     },
     {
-      img: Balcony16,
+      img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667063/Balkong/Balcony22_i8yic4.jpg',
       title: "Balkonginglasning"
     },
     {
-      img: Balcony21,
+      img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667063/Balkong/Balcony06_kl4nf6.jpg',
       title: "Balkonginglasning"
     },
     {
-      img: Balcony26,
+      img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667063/Balkong/Balcony20_ehlby1.jpg',
       title: "Balkonginglasning"
-    },
+    }
   ]
 
 //full gallery for terass
 export const fullTerassGallery = [
   {
-    img: Terass01,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667032/Terrass/Terass07_wy11uh.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass02,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667032/Terrass/Terass05_bqq4d7.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass03,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667032/Terrass/Terass12_ze1woi.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass04,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667032/Terrass/Terass17_pqqwjq.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass05,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667031/Terrass/Terass06_no0u0p.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass06,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667031/Terrass/Terass14_wnfykp.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass07,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667030/Terrass/Terass16_cliqjn.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass08,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667030/Terrass/Terass02_yqpahl.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass09,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667030/Terrass/Terass15_smetr7.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass10,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667030/Terrass/Terass18_fqagvz.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass11,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667030/Terrass/Terass20_jlz1pf.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass12,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667029/Terrass/Terass01_kcq75l.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass13,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667029/Terrass/Terass26_gukqnq.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass14,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667029/Terrass/Terass31_eudkbo.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass15,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667029/Terrass/Terass27_igajph.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass16,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667028/Terrass/Terass03_atmykx.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass17,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667028/Terrass/Terass19_nae8mk.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass18,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667028/Terrass/Terass13_xlyfvi.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass19,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667028/Terrass/Terass29_jr0nhb.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass20,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667028/Terrass/Terass10_aq47uc.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass21,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667027/Terrass/Terass21_zg2f8g.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass22,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667027/Terrass/Terass28_c19rqn.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass23,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667027/Terrass/Terass30_offda1.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass24,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667027/Terrass/Terass22_fbcgra.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass25,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667026/Terrass/Terass11_snimp5.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass26,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667026/Terrass/Terass08_b7s2hl.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass27,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667026/Terrass/Terass09_x6l0qi.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass28,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667026/Terrass/Terass04_xhfb89.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass29,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667026/Terrass/Terass24_xmmlj7.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass30,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667026/Terrass/Terass25_ktu5pg.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass31,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667026/Terrass/Terass23_kzlehr.jpg',
     title: "Terassinglasning"
   },
   
@@ -379,59 +308,63 @@ export const fullTerassGallery = [
 //small gallery for terass, on product-page
 export const exampleTerassGallery = [
   {
-    img: Terass01,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667032/Terrass/Terass07_wy11uh.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass06,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667032/Terrass/Terass05_bqq4d7.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass11,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667032/Terrass/Terass12_ze1woi.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass16,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667032/Terrass/Terass17_pqqwjq.jpg',
     title: "Terassinglasning"
   },
   {
-    img: Terass21,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667031/Terrass/Terass06_no0u0p.jpg',
     title: "Terassinglasning"
   },
+  {
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667031/Terrass/Terass14_wnfykp.jpg',
+    title: "Terassinglasning"
+  }
 ];
 
 //full gallery for tillbehör
 export const fullTillbehorGallery = [
   {
-    img: Tillbehor01,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667000/Tillbehor/tillbehor06_qom0mu.jpg',
     title: "Tillbehör inglasning"
   },
   {
-    img: Tillbehor02,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667000/Tillbehor/tillbehor03_kfk85s.jpg',
     title: "Tillbehör inglasning"
   },
   {
-    img: Tillbehor03,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667000/Tillbehor/tillbehor05_yvdn9c.jpg',
     title: "Tillbehör inglasning"
   },
   {
-    img: Tillbehor04,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635666999/Tillbehor/tillbehor04_alo83g.jpg',
     title: "Tillbehör inglasning"
   },
   {
-    img: Tillbehor05,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635666999/Tillbehor/tillbehor01_qme43x.jpg',
     title: "Tillbehör inglasning"
   },  
   {
-    img: Tillbehor06,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635666999/Tillbehor/tillbehor02_dv8rcr.jpg',
     title: "Tillbehör inglasning"
   },
   {
-    img: Tillbehor07,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635666999/Tillbehor/tillbehor08_taiagk.jpg',
     title: "Tillbehör inglasning"
   },
   {
-    img: Tillbehor08,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635666999/Tillbehor/tillbehor07_j1kd3y.jpg',
     title: "Tillbehör inglasning"
   },
 ];
@@ -439,23 +372,27 @@ export const fullTillbehorGallery = [
 //small gallery for tillbehor, on product-page
 export const exampleTillbehorGallery = [
   {
-    img: Tillbehor01,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667000/Tillbehor/tillbehor06_qom0mu.jpg',
     title: "Tillbehör inglasning"
   },
   {
-    img: Tillbehor03,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667000/Tillbehor/tillbehor03_kfk85s.jpg',
     title: "Tillbehör inglasning"
   },
   {
-    img: Tillbehor05,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635667000/Tillbehor/tillbehor05_yvdn9c.jpg',
     title: "Tillbehör inglasning"
   },
   {
-    img: Tillbehor06,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635666999/Tillbehor/tillbehor07_j1kd3y.jpg',
     title: "Tillbehör inglasning"
   },
   {
-    img: Tillbehor08,
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635666999/Tillbehor/tillbehor01_qme43x.jpg',
+    title: "Tillbehör inglasning"
+  },  
+  {
+    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/v1635666999/Tillbehor/tillbehor02_dv8rcr.jpg',
     title: "Tillbehör inglasning"
   },
 ];

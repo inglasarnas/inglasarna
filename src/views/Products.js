@@ -3,9 +3,6 @@ import RetailerInfoBox from "../components/RetailerInfoBox";
 import { Grid, Typography, makeStyles, } from "@material-ui/core";
 import BoxWithSideImg from "../components/BoxWithSideImg";
 import GridGallery from "../components/GridGallery";
-import ProductTerass from "../assets/media/ProductTerass.jpg";
-import Carousel01 from "../assets/media/Carousel01.jpg";
-import Carousel03 from "../assets/media/Carousel03.jpg";
 import { exampleBalconygallery, exampleTerassGallery, exampleTillbehorGallery } from "../assets/assets";
 
 
@@ -73,7 +70,7 @@ const Products = ({ from }) => {
       </Grid>
       <Grid item xs={12} ref={balkong} className={classes.marginContainer}>
         <BoxWithSideImg
-          img={Carousel01}
+          img='https://res.cloudinary.com/josephinehpersson/image/upload/v1635667062/Balkong/Balcony03_tq4qvk.jpg'
           imgAlt="Balkong"
           title="Balkong"
           text={
@@ -110,7 +107,7 @@ const Products = ({ from }) => {
         <div className={classes.divider}></div>
       <Grid item xs={12} ref={terass} className={classes.marginContainer}>
         <BoxWithSideImg
-          img={ProductTerass}
+          img='https://res.cloudinary.com/josephinehpersson/image/upload/v1635667028/Terrass/Terass29_jr0nhb.jpg'
           imgAlt="Terrass"
           title="Terrass"
           text={
@@ -145,7 +142,7 @@ const Products = ({ from }) => {
       <div className={classes.divider}></div>
       <Grid item xs={12} ref={tillbehör} className={classes.marginContainer}>
         <BoxWithSideImg
-          img={Carousel03}
+          img='https://res.cloudinary.com/josephinehpersson/image/upload/v1635666999/Tillbehor/tillbehor04_alo83g.jpg'
           imgAlt="Solgardiner och persienner"
           title="Solgardiner och Persienner"
           text={

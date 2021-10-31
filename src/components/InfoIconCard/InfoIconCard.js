@@ -4,7 +4,7 @@ import {GoTools} from 'react-icons/go';
 
 const useStyles= makeStyles((theme) => ({
     container: {
-        background: 'linear-gradient(270deg, rgba(255, 255, 255, 0.31) 0%, #FFFFFF 58.62%), url("https://lumon.com/sites/default/files/styles/large_gallery/public/images/sv/lumon-inglasad-balkong-03.jpg?itok=_-IHhWi3")',
+        background: 'linear-gradient(270deg, rgba(255, 255, 255, 0.31) 0%, #FFFFFF 58.62%), url("https://res.cloudinary.com/josephinehpersson/image/upload/v1635667062/Balkong/Balcony13_sjvb9c.jpg")',
         backgroundSize: '100%',
         backgroundPosition: 'center',
         boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',

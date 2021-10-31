@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
   },
   galleryImage: {
     objectFit: "cover",
+    cursor: "pointer",
   },
   gridList: {
     justifyContent: "center",

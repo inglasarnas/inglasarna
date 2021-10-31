@@ -14,7 +14,7 @@ import { useState, useEffect } from "react";
 const useStyles = makeStyles((theme) => ({
   container: {
     backgroundImage:
-      "url('https://lumon.com/sites/default/files/styles/large_gallery/public/images/sv/lumon-balkonginglasning-701.jpg?itok=l8oWvTok')",
+      "url('https://res.cloudinary.com/josephinehpersson/image/upload/v1635519131/Kontaktform_k1r6ij.jpg')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",

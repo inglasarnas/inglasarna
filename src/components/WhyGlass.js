@@ -1,12 +1,11 @@
 import React from 'react';
 import { makeStyles, Grid, Typography } from '@material-ui/core';
-import ProductBalcony from '../assets/media/ProductBalcony.jpg';
 
 
 const useStyles = makeStyles((theme) => ({
 
   infoContainer: {
-    backgroundImage: `url(${ProductBalcony})`,
+    backgroundImage: `url(https://res.cloudinary.com/josephinehpersson/image/upload/v1635667062/Balkong/Balcony07_nt31ik.jpg)`,
     backgroundSize: 'cover',
     display: 'flex',
     flexFlow: 'row wrap',
