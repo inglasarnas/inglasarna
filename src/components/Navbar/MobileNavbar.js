@@ -141,6 +141,8 @@ const MobileNavbar = (props) => {
               button
               divider
               className={classes.listItem}
+              onClick={() => props.history.push("/prices")}
+
             >
               <Typography variant="h3" color="primary">
                 Kostnad
