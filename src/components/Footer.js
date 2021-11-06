@@ -32,15 +32,16 @@ const useStyles = makeStyles((theme) => ({
     width: '24vw',
     display: 'flex',
     flexFlow: 'column nowrap',
-    alignItems: 'flex-start',
-    justifyContent: 'flex-start'
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   box3: {
     width: '31vw',
     display: 'flex',
     flexFlow: 'column nowrap',
-    alignItems: 'flex-start',
-    justifyContent: 'flex-start',
+    alignItems: 'flex-end',
+    justifyContent: 'flex-end',
+    paddingRight: '1vw'
   },
   marginBottom: {
     marginBottom: '0.5vw',
