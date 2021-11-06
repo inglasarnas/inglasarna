@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import Carousel from "react-material-ui-carousel";
-import {LazyLoadImage} from 'react-lazy-load-image-component';
+import LazyLoad from 'react-lazyload';
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -27,6 +27,8 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(5),
   },
   galleryImage: {
+    width: '100%',
+    height: '100%',
     objectFit: "cover",
     cursor: "pointer",
   },
@@ -52,14 +54,14 @@ const GridGallery = (props) => {
       <GridList cellHeight={250} cols={3} className={classes.gridList}>
         {props.images.map((image, index) => (
           <GridListTile key={index} cols={1}>
-            <LazyLoadImage
+            <LazyLoad once={true} offset={1000}>
+            <img
               onClick={() => openLightBox(index)}
               className={classes.galleryImage}
               src={image.img}
               alt={image.title}
-              height="100%"
-              width="100%"
             />
+            </LazyLoad>
           </GridListTile>
         ))}
       </GridList>
