@@ -5,23 +5,23 @@ export const carouselImages = [
     image: 'https://res.cloudinary.com/josephinehpersson/image/upload/s--QtokckRd--/q_jpegmini/v1635667060/Balkong/Balcony02_qoehma.jpg'
   },
   {
-    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/s--hw6tD8Wq--/q_jpegmini/v1635667028/Terrass/Terass29_jr0nhb.jpg',
+    image: 'https://res.cloudinary.com/josephinehpersson/image/upload/s--hw6tD8Wq--/q_jpegmini/v1635667028/Terrass/Terass29_jr0nhb.jpg',
     title: "Terassinglasning"
   },
   {
-    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/s--5eMq5x1c--/q_jpegmini/v1635667062/Balkong/Balcony11_ybu7pp.jpg',
+    image: 'https://res.cloudinary.com/josephinehpersson/image/upload/s--5eMq5x1c--/q_jpegmini/v1635667062/Balkong/Balcony11_ybu7pp.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/s--khKRNIAA--/q_jpegmini/v1635667027/Terrass/Terass28_c19rqn.jpg',
+    image: 'https://res.cloudinary.com/josephinehpersson/image/upload/s--khKRNIAA--/q_jpegmini/v1635667027/Terrass/Terass28_c19rqn.jpg',
     title: "Terassinglasning"
   },
   {
-    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/s--NRZtuKxl--/q_jpegmini/v1635667063/Balkong/Balcony22_i8yic4.jpg',
+    image: 'https://res.cloudinary.com/josephinehpersson/image/upload/s--NRZtuKxl--/q_jpegmini/v1635667063/Balkong/Balcony22_i8yic4.jpg',
     title: "Balkonginglasning"
   },
   {
-    img: 'https://res.cloudinary.com/josephinehpersson/image/upload/s--Ip-JaLIW--/q_jpegmini/v1635667028/Terrass/Terass13_xlyfvi.jpg',
+    image: 'https://res.cloudinary.com/josephinehpersson/image/upload/s--Ip-JaLIW--/q_jpegmini/v1635667028/Terrass/Terass13_xlyfvi.jpg',
     title: "Terassinglasning"
   },
 ];
