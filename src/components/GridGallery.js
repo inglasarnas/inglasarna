@@ -60,7 +60,7 @@ const GridGallery = (props) => {
       <GridList cellHeight={250} cols={3} className={classes.gridList}>
         {props.images.map((image, index) => (
           <GridListTile key={index} cols={1}>
-            <LazyLoad height={100} once={true} offset={1000}>
+            <LazyLoad height={100} once offset={1000}>
             <img
               onClick={() => openLightBox(index)}
               className={classes.galleryImage}
