@@ -72,8 +72,8 @@ const Contact = ({ from }) => {
       <div className={classes.marginBottom5} />
       <ContactBox
         image={logo}
-        name="+4676 337 6264"
-        number="+4673 502 3645"
+        name="+4673 502 3645"
+        number="+4676 337 6264"
         email="info@inglasarna.se"
       />
       <div className={classes.marginBottom5} />
