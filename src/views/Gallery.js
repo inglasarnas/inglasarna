@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState, useEffect} from "react";
 import GridGallery from "../components/GridGallery";
 import { Grid, makeStyles } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
@@ -20,8 +20,26 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "1vh",
   },
 }));
+
+
 const Gallery = () => {
   const classes = useStyles();
+  const [balkonger, setBalkonger] = useState([]);
+  const [terrasser, setTerrasser] = useState([]);
+  const [tillbehor, setTillbehor] = useState([]);
+
+  useEffect(() => {
+    if(fullBalconyGallery) {
+      setBalkonger([...fullBalconyGallery]);
+    }
+    if(fullTerassGallery) {
+      setTerrasser([...fullTerassGallery]);
+    }
+    if(fullTillbehorGallery) {
+      setTillbehor([...fullTillbehorGallery]);
+    }
+  }, []); 
+
   return (
     <Grid container className={classes.container}>
       <Grid item xs={12} className={[classes.textContainer, classes.marginContainer]}>
@@ -33,13 +51,13 @@ const Gallery = () => {
         </Typography>
       </Grid>
       <Grid item xs={12} className={classes.marginContainer}>
-        <GridGallery images={fullBalconyGallery} title="Balkonger" />
+        <GridGallery images={balkonger} title="Balkonger" />
       </Grid>
       <Grid item xs={12} className={classes.marginContainer}>
-        <GridGallery images={fullTerassGallery} title="Terrasser" />
+        <GridGallery images={terrasser} title="Terrasser" />
       </Grid>
       <Grid item xs={12} className={classes.marginContainer}>
-        <GridGallery images={fullTillbehorGallery} title="Tillbehör" />
+        <GridGallery images={tillbehor} title="Tillbehör" />
       </Grid>
     </Grid>
   );

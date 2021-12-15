@@ -52,24 +52,26 @@ const GridGallery = (props) => {
     setOpen(true);
   };
 
+  const images = props.images.map((image, index) => (
+    <GridListTile key={index} cols={1}>
+      <LazyLoad height={100} once={true} offset={1000}>
+      <img
+        onClick={() => openLightBox(index)}
+        className={classes.galleryImage}
+        src={image.img}
+        alt={image.title}
+      />
+    </LazyLoad>
+    </GridListTile>
+  ));
+
   return (
     <Container className={classes.container}>
       <Typography variant="h2" className={classes.title}>
         {props.title || "Rubrik"}
       </Typography>
       <GridList cellHeight={250} cols={3} className={classes.gridList}>
-        {props.images.map((image, index) => (
-          <GridListTile key={index} cols={1}>
-            <LazyLoad height={100} once offset={1000}>
-            <img
-              onClick={() => openLightBox(index)}
-              className={classes.galleryImage}
-              src={image.img}
-              alt={image.title}
-            />
-          </LazyLoad>
-          </GridListTile>
-        ))}
+        {images}
       </GridList>
       <Modal
         disableAutoFocus={true}
